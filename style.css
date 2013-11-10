@@ -1,0 +1,17 @@
+body {
+	  background-color: white;
+	  background-image: url("idil.jpg");
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	}
+	
+	table {
+	background: blue;
+		border = "5";
+		
+		width = "400px";
+		
+		padding= "5";
+		
+	
+	}
