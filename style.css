@@ -6,12 +6,44 @@ body {
 	}
 	
 	table {
-	background: blue;
-		border = "5";
-		
-		width = "400px";
-		
-		padding= "5";
-		
+	background: yellow;
+		border = "5";		
+		width = "400px";		
+		padding= "5";	
+	}
+	                 
+	h1 { 
+	   color: green;	
+	   font-family: arial, verdana, sans-serif;
+	   font-variant: normal;
+	   font-size: 18px;
+	   text-decoration:underline;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
 	
+	h3 { 
+	   color: blue;		
+	   font-family: "Times New Roman", serif;
+	   font-variant: lowercase;
+	   font-size: 16px;
+	   text-decoration: upper-roman;
+	   text-transform: none;
+	}
+	
+	p {
+	 text-indent: 30px;
+		font: normal normal 14px arial, sans-serif;
+		text-align: justify;
+		letter-spacing: 0px;
+	}
+	
+	th{
+	font-family: "Times New Roman", serif;
+	  font-weight: bold;
+	  text-align: left;
+	}
+	
+	td{
+	font: normal normal 14px arial, serif;
 	}

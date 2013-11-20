@@ -1,106 +1,346 @@
 <!doctype html>
 <html>
 <head>
-<title>Doctors at Home</title>	
-	<link rel="stylesheet" type="text/css" href="style.css" />	
-	
+<meta charset="utf-8">
+<title>Das ist eine CSS-Tutorial für Doctors</title>	
+	<link rel="stylesheet" type="text/css" href="style.css" />		
 </head>
 
 <body>
-
-   Home <a href="erste.html"> <img src="icon.jpg"  height = "100px"; width="100px";/> </a>
+  
+  <h1> <b> Was ist ein CSS? <b></h1>   
+  <p> Cascading Style Sheets (CSS) sind ein fantastisches Werkzeug, um Ihre Webseiten zu layouten, ihnen ein Aussehen zu verpassen. <br>
+		Sie können viel Zeit sparen und es eröffnen sich völlig neue Wege, Webseiten zu designen. CSS ist ein Muss für jeden, der <br>
+		sich mit Webdesign beschäftigt.Mit diesem Tutorial können Sie in ein paar Stunden mit CSS beginnen. Es ist einfach zu <br>
+		verstehen und alle nötigen Techniken werden erläutert. </p>
+		
+	<h1> <b> Was kann ich mit CSS machen? <b></h1>   
+	<p> CSS ist eine Stilsprache, die das Aussehen von HTML-Dokumenten definiert. CSS kann man z.B. zum festlegen von Schriftarten, <br>
+	Farben, Rändern, Linien, Höhen, Breiten, Hintergrundbildern, für fortgeschrittener Positionierung und viele andere Sachen benutzen.<br>
+	Warten Sie ab!HTML kann zum layouten von Webseiten (miß-)braucht werden. Aber CSS bietet mehr Möglichkeiten und ist zudem viel genauer <br>
+	und ausgereifter. CSS wird von allen Browsern unterstützt. </p>		
+		
+	<h1> <b> Wo ist der Unterschied zwischen CSS und HTML? <b></h1>   
+	<p> Mit HTML werden Inhalte strukturiert. Mit CSS wird der strukturierte Inhalt formatiert. </p>
+	
+	<h1> <b> Wo wird CSS-Code geschrieben? <b></h1>
+		<h3> <b> Methode-1: In-Line (Atrribute-Still) <b></h3> 
+		<p> Eine Möglichkeit CSS in HTML zu verwenden, ist das Attribut style,zB:</p>
+		<img src="in-line.jpg"  height="150px"; width="600px";/>
+	
+		<h3> <b> Methode-2: In-document (Tag-Stil)<b></h3> 
+		<p> Ein weiterer Weg ist, die CSS-Codes über den HTML-Tag "style" einzubinden, z.B. so:</p>
+		<img src="in-document.jpg"  height="175px"; width="600px";/>
+	
+		<h3> <b> Methode 3: Extern (Verweis auf ein Style Sheet)<b></h3> 
+		<p> Ein externes Stylesheet ist einfach eine Textdatei mit der Endung .css. Wie jede <br> 
+		andere Datei auch, können Sie das Stylesheet auf Ihrem Webserver oder Ihrer Festplatte <br>
+		speichern.Nehmen wir an, Ihr Stylesheet heißt style.css und befindet sich im Ordner style.</p>
+		<img src="extern.jpg"  height="175px"; width="600px";/>
+   
+   <h1> <b> Lektion-1: Farben und Hintergründe<b></h1>
    
    
-    <ul class="clearfix outer">
-        
-        <li class="section nav-products"><a href=" our-snacks.html " class="title">Our Snacks</a>
-            <div class="subsection">
-                <div class="subsection-bg"> 
-                    <ul>
-                        <li><a href=" /our-snacks.html  "><span>Current Features</span></a></li> 
-                        <li><a href=" /our-snacks/full-list-of-brands.html  "><span>Full List of Brands</span></a></li> 
-                        <li><a href=" /our-snacks/our-latest-snacks.html  "><span>Our Latest Snacks</span></a></li> 
-                        <li><a href=" /our-snacks/where-to-buy.html  "><span>Where to Buy</span></a></li> 
-                        
-                    </ul> 
-                </div>
-            </div>
-        </li>
-        
-        <li class="section nav-recipes"><a href=" /recipes " class="title">Recipes</a>
-            <div class="subsection">
-                <div class="subsection-bg"> 
-                    <ul>
-                        <li><a href=" /recipes  "><span>Browse Our Recipes</span></a></li> 
-                        <li><a href=" /recipes/dishes/gluten-free  "><span>Gluten Free Recipes</span></a></li> 
-                        <li><a href=" /recipes/occasions/flavor-kitchen  "><span>Visit the Flavor Kitchen™</span></a></li> 
-                        <li><a href=" http://www.fritolayfan.com/cookbook/  "><span>Frito-Lay Fan e-Cookbook</span></a></li> 
-                        
-                    </ul> 
-                </div>
-            </div>
-        </li>
-        
-        <li class="section nav-health"><a href=" /your-health.html " class="title">Your Health</a>
-            <div class="subsection">
-                <div class="subsection-bg"> 
-                    <ul>
-                        <li><a href=" /your-health.html  "><span>Current Features</span></a></li> 
-                        <li><a href=" /your-health/how-we-make-our-snacks.html  "><span>How We Make Our Snacks</span></a></li> 
-                        <li><a href=" /your-health/sensible-snacking.html  "><span>Sensible Snacking</span></a></li> 
-                        <li><a href=" /your-health/for-special-dietary-needs.html  "><span>For Special Dietary Needs</span></a></li> 
-                        <li><a href=" /your-health/whats-in-our-snacks.html  "><span>What's in Our Snacks</span></a></li> 
-                        <li><a href=" /your-health/feature-answers.html  "><span>Straight Talk on Snacking</span></a></li> 
-                        <li><a href=" /your-health/for-health-professionals.html  "><span>For Health Professionals</span></a></li> 
-                        
-                    </ul> 
-                </div>
-            </div>
-        </li>
-        
-        <li class="section nav-our-planet"><a href=" /our-planet.html " class="title">Our Planet</a>
-            <div class="subsection">
-                <div class="subsection-bg"> 
-                    <ul>
-                        <li><a href=" /our-planet.html  "><span>Current Features</span></a></li> 
-                        <li><a href=" /our-planet/steps-to-a-healthier-planet.html  "><span>Steps to a Healthier Planet</span></a></li> 
-                        <li><a href=" /our-planet/conserving-energy.html  "><span>Conserving Energy</span></a></li> 
-                        <li><a href=" /our-planet/saving-water.html  "><span>Saving Water</span></a></li> 
-                        <li><a href=" /our-planet/minimizing-waste.html  "><span>Minimizing Waste</span></a></li> 
-                        <li><a href=" /our-planet/reducing-emissions.html  "><span>Reducing Emissions</span></a></li> 
-                        <li><a href=" /our-planet/terracycle.html  "><span>TerraCycle</span></a></li> 
-                        
-                    </ul> 
-                </div>
-            </div>
-        </li>
-        
-        <li class="section nav-company"><a href=" /about-us.html " class="title">About Us</a>
-            <div class="subsection">
-                <div class="subsection-bg"> 
-                    <ul>
-                        <li><a href=" /about-us.html  "><span>Current Features</span></a></li> 
-                        <li><a href=" /about-us/history.html  "><span>How It All Began</span></a></li> 
-                        <li><a href=" /about-us/our-company-vision.html  "><span>Our Company Vision</span></a></li> 
-                        <li><a href=" /about-us/careers.html  "><span>Careers</span></a></li> 
-                        <li><a href=" /about-us/our-promise.html  "><span>Our Promise</span></a></li> 
-                        <li><a href=" /about-us/snack-chat-blog.html  "><span>Snack Chat™ Blog</span></a></li> 
-                        <li><a href=" /about-us/news.html  "><span>News</span></a></li> 
-                        <li><a href=" /about-us/corporate-awards.html  "><span>Corporate Awards</span></a></li> 
-                        <li><a href=" /about-us/supplier-diversity.html  "><span>Supplier Diversity</span></a></li> 
-                        <li><a href=" /about-us/for-investors.html  "><span>For Investors</span></a></li> 
-                        <li><a href=" /about-us/leadership.html  "><span>Leadership</span></a></li> 
-                        <li><a href=" https://cu1.pepsico.com/fritolay  "><span>FAQ</span></a></li> 
-                        <li><a href=" https://cu1.pepsico.com/fritolay  "><span>Contact Us</span></a></li> 
-                        
-                    </ul> 
-                </div>
-            </div>
-        </li>
-        
-    </ul>
+    <ul>       
+        <li> color </li>
+		<li> background-color</li>
+		<li> background-image </li>
+		<li> background-repeat </li>
+		<li> background-attachment </li>
+		<li> background-position </li>
+     </ul>
+	 
+	 <p> Nehmen wir an, wir möchten, dass alle Überschriften in einem Dokument rot sind. Alle Überschriften sind mit dem HTML-Element "h1" markiert. <br>
+	 Der nachfolgende Code setzt die Farbe von "h1"-Elementen auf rot. </p>	 
+	 <img src="color.jpg" height="175px" width="600px";>
+	 
+	 <p> Die Eigenschaft background-color beschreibt die Hintergrundfarbe eines Elementes.<br>
+	 Das Element <body> enthält jeglichen Inhalt eines HTML-Dokumentes. Darum sollte, <br> 
+	 um die Hintergrundfarbe der ganzen Seite zu ändern, die Eigenschaft ‘background-color’ <br> 
+	 dem "body"-Element zugewiesen werden. Sie können auch anderen Elementen, wie z.B. Überschriften <br>
+	 oder normalem Text, eine Hintergrundfarbe zuweisen. Im folgenden Beispiel sind dem "body"- und den <br>
+	 "h1"-Elementen verschiedene Hintergrundfarben zugewiesen. </p>
+	 <img src="background-color.jpg" height="175px" width="600px";	>	 
+	 
+	 <p> Die CSS-Eigenschaft background-image wird benutzt, um ein Hintergrundbild einzufügen.<br>
+		Hier wird die Hintergrund-image für ganzen Body Element hinzugefügt.</p>
+	 <img src="background-image.jpg" height="175px" width="600px";	>
+	 
+	 <p> In der folgenden Tabelle sehen Sie die vier verschiedenen Werte, die background-repeat annehmen kann, erläutert.</p>
+	 <table  cellspacing="10px">	
+		<tr>
+			<th> Wert </th>
+			<th> Beschreibung</th>			
+		</tr>
+		<tr>
+			<td> background-repeat: repeat-x </td>
+			<td> Das Bild wird horizontal wiederholt </td>			
+		</tr>
+		
+		<tr>			
+			<td> background-repeat: repeat-y </td>
+			<td> Das Bild wird vertikal wiederholt </td>			
+		</tr>
+		
+		<tr>			
+			<td> background-repeat: repeat </td>			
+			<td> Das Bild wird sowohl horizontal als auch vertikal wiederholt </td>		
+		</tr>
+		
+		<tr>			
+			<td> background-repeat: no-repeat</td>			
+			<td> Das Bild wird nicht wiederholt</td>
+		</tr>
+		
+</table>
 
+	<p> Um z.B. die Wiederholung des Hintergrundbildes zu verhindern, sollte unser Code wie folgt aussehen:</p>
+	<img src="hintergrundwiederholung.jpg" height="175px" width = "600px";>
+	
+	<p> Die Eigenschaft background-attachment legt fest, ob sich ein Hintergrundbild mitscrollen läßt oder nicht. <br>
+	Ein fixiertes Hintergrundbild läßt sich von einem Leser nicht mit dem Text scrollen, währenddessen sich ein <br>
+	nicht fixiertes zusammen mit dem anderen Inhalt der Seite nach oben aus dem Bild schieben läßt. Die folgende<br>
+	Tabelle zeigt die zwei verschiedenen Möglichkeiten für die Eigenschaft background-attachment. Klicken Sie auf<br>
+	die Beispiele, um den Unterschied zwischen scrollbar und fixiert zu sehen.</p>
+	
+		 <table  cellspacing="10px">	
+		<tr>
+			<th> Wert </th>
+			<th> Beschreibung</th>			
+		</tr>
+		<tr>
+			<td> background-attachment: scroll</td>
+			<td> Das Bild scrollt mit der Seite - nicht fixiert </td>			
+		</tr>
+		
+		<tr>			
+			<td> background-attachment: fixed </td>
+			<td> Das Bild ist fixiert </td>			
+		</tr>		
+</table>
+	<p>Im nachfolgenden Code ist das Hintergrundbild fixiert.</p>
+	<img src="hintergrund-fix.jpg" height="175px" width = "600px";>
+	
+	
+		<p> Standardmäßig wird das Hintergrundbild in der oberen linken Ecke das Bildschirmes festgesetzt. <br>
+		Mit der Eigenschaft background-position können Sie dies ändern und das Bild frei nach Ihren Wünschen <br>
+		auf dem Bildschirm positionieren.Es gibt mehrere Wege, dem background-position Werte zuzuweisen.<br>
+		Aber alle haben die Gemeinsamkeit, dass sie als ein Paar Koordinaten angegeben sind. Der Wert <br>
+		‘100px 200px’ z.B. positioniert das Hintergrundbild im Browserfenster 100 Pixel von der linken Seite <br>
+		und 200 Pixel von oben.Diese Koordinaten können als Prozentwert der Bildschirmbreite, feste Größen <br>
+		(Pixel, Zentimeter usw.) oder mit den Worten top (oben), bottom (unten), center (zentriert), <br>
+		left (links) und right (rechts) angegeben werden. Die folgende Darstellung verdeutlicht das Prinzip:</p>
 
+<table  cellspacing="10px">	
+		<tr>
+			<th> Wert </th>
+			<th> Beschreibung</th>			
+		</tr>
+		<tr>
+			<td> background-position: 2cm 2cm</td>
+			<td> Das Bild befindet sich 2 cm vom linken und 2 cm vom oberen Rand der Seite entfernt </td>			
+		</tr>
+		
+		<tr>			
+			<td> background-position: 50% 25% </td>
+			<td> Das Bild ist zentriert und ein Viertel vom oberen Rand entfernt </td>			
+		</tr>		
+		
+			<tr>			
+			<td> background-position: top right </td>
+			<td> Das ist ist in der oberen rechten Ecke der Seite positioniert</td>			
+		</tr>	
+</table>
+	<p>Das nachfolgende Codebeispiel positioniert das Hintergrundbild in der unteren rechten Ecke:</p>
+	<img src="hintergrund-position.jpg" height="175px" width = "600px";>
+	
+	<p>Kombination der Hintergrundeigenschaften: die Eigenschaft ‘background’. Es könnte die obigen Eigenschaften <br> 
+	in einem Zeile kombiniert werden</p>
+	<img src="hintergrund-kombination.jpg" height="175px" width="600px";>
+	 
+	<!-- Hier fängt die zweite Lektion mit der Inhalt Zeichensätze(Fonts) -->  
+	
+	
+	 <h1> <b> Lektion 2: Zeichensätze (Fonts)<b></h1>
+   <p>In dieser Lektion werden Sie mehr darüber erfahren, wie Zeichensätze mit Hilfe von CSS eingebunden werden können. <br>
+   Wir werden auch zeigen, wie man dem Problem begegnen kann, dass eine bestimmte (besondere) Schriftart, welche Sie für <br>
+   Ihre Webseite ausgesucht haben, nicht angezeigt wird, wenn auf dem betreffenden Rechner selbige Schriftart nicht installiert ist. </p>
+   
+    <ul>       
+        <li> font-family</li>
+		<li> font-style</li>
+		<li> font-variant </li>
+		<li> font-weight</li>
+		<li> font-size </li>
+		<li> font </li>
+     </ul>
+	
+
+	<h3> <b> 1- Zeichensatzfamilie: die Eigenschaft ‘font-family’ <b></h3> 	
+	 <p> Die Eigenschaft font-family wird verwendet, um eine priorisierende Liste der Zeichensätze anzugeben, in der ein bestimmtes Element <br>
+	 oder eine Webseite angezeigt werden soll. Wenn der erste Zeichensatz nicht auf dem Computer, mit dem die Seite betrachtet wird, installiert ist, <br>
+	 wird der nächstfolgende probiert, bis ein vorhandener bzw. passender Zeichensatz gefunden ist.
+<br>
+	Es gibt zwei Arten, wie man Zeichensätze kategorisieren kann: Schriftfamilien und generische (gattungsmäßige) Familien. Die beiden Ausdrücke <br>
+	werden nachfolgend erklärt.
+<br>
+Schriftfamilien: Beispiele für eine Schriftfamilie (oft auch nur “Schriftart” oder “font” genannt) sind z.B. “Arial”, “Times New Roman” oder “Tahoma”.
+<br>
+generische Familien: Generische (oder gattungsmäßige) Familien können wohl am besten als Gruppen von Schriftartfamilien beschrieben werden, die ein <br>
+ähnliches Aussehen haben. Als Beispiel sei hier “sans-serif” genannt, welches Schriftarten umfaßt, die keine “Füßchen” haben.</p>	
+
+<p> Ein Beispiel für solch eine priorisierende Liste der Zeichensätze könnte wie folgt aussehen: </p>
+	 <img src="font-family.jpg" height="175px" width="600px";>
+	 
+	<h3> <b> 2- Schriftstil: die Eigenschaft ‘font-style’ <b></h3>  
+	 
+	 <p> Die Eigenschaft font-style weißt dem betreffenden Element die Stile normal (kein Stil), italic (kursiv) oder oblique (schräg) zu.<br> 
+	 Im folgenden Beispiel werden alle Überschriften, die mit "h2" markiert sind, kursiv geschrieben. </p>
+	 <img src="font-style.jpg" height="175px" width="600px";	>	 
+	 
+	 <h3> <b> 3- Schriftvarianten: die Eigenschaft ‘font-variant‘ <b></h3>  
+	 <p> Mit der Eigenschaft font-variant kann man zwischen normal oder small-caps wählen. Bei small-caps benutzt die Schriftart anstatt der <br>
+	 Kleinbuchstaben (lower-case), kleiner geschriebene Großbuchstaben (upper-case). Verwirrt? Sehen Sie sich die Beispiele an:</p>
+	 <img src="font-variant.jpg" height="175px" width="600px";	>
+	 
+	 <h3> <b> 4- Schriftgewichtung: die Eigenschaft ‘font-weight’<b></h3>  
+	 <p> Mit der Eigenschaft font-weight gibt man an, wie fett oder “schwer” eine Schriftart angezeigt werden soll. Eine Schrift kann entweder<br>
+	 normal oder bold (fett) dargestellt werden. Einige Browser unterstützen auch die Angabe der Zahlen 100-900 (nur volle Hunderter) um eine feiner<br>
+	 abgestufte Darstellung zu erreichen.</p>
+	 <img src="font-weight.jpg" height="175px" width="600px";	>
+	 
+	 <h3> <b> 5- Schriftgröße: die Eigenschaft ‘font-size’<b></h3>  
+	 <p> Die Schriftgröße wird durch die Eigenschaft font-size festgelegt. <br>
+	 Man kann viele verschiedene Einheiten (z.B. Pixel und Prozentwerte) verwenden um die Größen zu beschreiben. In diesem Tutorial werden <br>
+	 wir uns auf die meistgebrauchten und zweckmäßigsten Einheiten konzentrieren. Beispiele sind:</p>
+	 <img src="font-size.jpg" height="175px" width="600px";	>
+	 
+	 
+	 <h3> <b> 6- Kombinationder  Eigenschaft ‘font’<b></h3>  
+	 <p>Mit Hilfe der font-Eigenschaft können Sie alle Schrift-Eigenschaften in dieser einen Eigenschaft vereinen. Stellen Sie sich z.B. die folgenden<br>
+	 vier Codezeilen vor, die die Schrifteigenschaften für "p" angeben:</p>
+	 <img src="kombination-font.jpg" height="175px" width="600px";	>
+	 
+	
+<!-- ab hier fängt dann Lektion 3: Text an..-->
+
+ <h1> <b> Lektion 3: Text formatieren<b></h1>
+   <p>Texte zu formatieren, ist eine der Hauptaufgaben für jeden Webdesigner. In dieser Lektion werden wir zeigen, welche unglaublichen Möglichkeiten <br>
+   CSS bietet,   um einen Text nach mehr aussehen zu lassen. Die folgenden Eigenschaften werden beschrieben: </p>
+   
+    <ul>       
+        <li> text-indent</li>
+		<li> text-align</li>
+		<li> text-decoration </li>
+		<li> text-spacing</li>
+		<li> text-transform</li>
+     </ul>
+	
+
+	<h3> <b> 1- Texteinrückung: die Eigenschaft ‘text-indent’ <b></h3> 	
+	 <p> Die Eigenschaft text-indent erlaubt es Ihnen, Ihrem Text einen eleganten Touch zu geben, indem Sie die erste Zeile eines Absatzes einrücken.<br>
+	 Im folgenden Beispiel werden alle Absätze, die mit "p" markiert sind, um 30px eingerückt:</p>	
+	 <img src="text-indent.jpg" height="175px" width="600px";>
+	 
+	<h3> <b> 2- Textausrichtung: die Eigenschaft ‘text-align’ <b></h3>  
+	 
+	 <p> Die CSS-Eigenschaft text-align ist mit dem Attribut align vergleichbar, welches in älteren HTML-Versionen verwendet wurde. Text kann entweder <br>
+	 left (links), right (rechts) oder center (zentriert) ausgerichtet werden. Außerdem steht der Wert justify für Blocksatz zur Verfügung, d.h. jede Zeile <br>
+	 wird so gestreckt, dass alle gleich lang sind. Dies kennen Sie vielleicht aus Zeitungen und Zeitschriften. Im unten stehenden Beispiel ist der Text in <br>
+	 Tabellenköpfen "th" (table header) rechts ausgerichtet, während er in normalen Tabellenzellen "td" zentriert wird. Zusätzlich werden normale Absätze im <br>
+	 Blocksatz geschrieben: </p>
+	 <img src="text-align.jpg" height="175px" width="600px";	>	 
+	 
+	 <h3> <b> 3- Textdekoration: die Eigenschaft ‘text-decoration’ <b></h3>  
+	 <p> Mit der Eigenschaft text-decoration ist es möglich, Texte verschiedenartig zu “dekorieren” oder Ihnen “Effekte” zu verleihen. Sie können Texte  <br>
+	 unterstreichen, durchstreichen oder eine Linie darüber zeichnen lassen. Im folgenden Beispiel sind "h1"-Überschriften unterstrichen, "h2"-Überschriften <br>
+	 haben eine Linie über dem Text und "h3"-Überschriften sind durchgestrichen.</p>
+	 <img src="text-decoration.jpg" height="175px" width="600px";	>
+	 
+	 <h3> <b> 4- Laufweite (Abstand zwischen den Buchstaben): die Eigenschaft ‘letter-spacing’<b></h3>  
+	 <p> Die Laufweite von Text kann mit der Eigenschaft letter-spacing verändert werden. Der Wert, den die Eigenschaft annimmt, ist einfach der gewünschte Abstand<br>
+	 der Buchstaben. Wenn Sie z.B. eine Laufweite von 3px für Ihre Textabsätze "p" und 6px für "h1"-Überschriften wünschen, kann der nachfolgende Code verwendet werden.</p>
+	 <img src="text-spacing.jpg" height="175px" width="600px";	>
+	 
+	 <h3> <b> 5- Texttransformation: die Eigenschaft ‘text-transform’<b></h3>  
+	 <p> Mit der Eigenschaft text-transform kann man die Groß- und Kleinschreibung eines Textes kontrollieren. Sie können wählen zwischen capitalize, uppercase oder lowercase<br>
+	 wählen, egal wie der Ursprungstext im HTML-Code aussieht.</p>
+	 <img src="text-transform.jpg" height="175px" width="600px";	>
+	 
+	 
+	 <h3> <b> 6- Kombinationder  Eigenschaft ‘font’<b></h3>  
+	 <p>Mit Hilfe der font-Eigenschaft können Sie alle Schrift-Eigenschaften in dieser einen Eigenschaft vereinen. Stellen Sie sich z.B. die folgenden<br>
+	 vier Codezeilen vor, die die Schrifteigenschaften für "p" angeben:</p>
+	 <img src="kombination-font.jpg" height="175px" width="600px";	>
+	 
+	 <!-- bis hier her-->
+	 
+	 
+	 
+	<p> Um z.B. die Wiederholung des Hintergrundbildes zu verhindern, sollte unser Code wie folgt aussehen:</p>
+	<img src="hintergrundwiederholung.jpg" height="175px" width = "600px";>
+	
+	<p> Die Eigenschaft background-attachment legt fest, ob sich ein Hintergrundbild mitscrollen läßt oder nicht. <br>
+	Ein fixiertes Hintergrundbild läßt sich von einem Leser nicht mit dem Text scrollen, währenddessen sich ein <br>
+	nicht fixiertes zusammen mit dem anderen Inhalt der Seite nach oben aus dem Bild schieben läßt. Die folgende<br>
+	Tabelle zeigt die zwei verschiedenen Möglichkeiten für die Eigenschaft background-attachment. Klicken Sie auf<br>
+	die Beispiele, um den Unterschied zwischen scrollbar und fixiert zu sehen.</p>
+	
+		 <table  cellspacing="10px">	
+		<tr>
+			<th> Wert </th>
+			<th> Beschreibung</th>			
+		</tr>
+		<tr>
+			<th> background-attachment: scroll</th>
+			<th> Das Bild scrollt mit der Seite - nicht fixiert </th>			
+		</tr>
+		
+		<tr>			
+			<th> background-attachment: fixed </th>
+			<th> Das Bild ist fixiert </th>			
+		</tr>		
+</table>
+	<p>Im nachfolgenden Code ist das Hintergrundbild fixiert.</p>
+	<img src="hintergrund-fix.jpg" height="175px" width = "600px";>
+	
+	
+		<p> Standardmäßig wird das Hintergrundbild in der oberen linken Ecke das Bildschirmes festgesetzt. <br>
+		Mit der Eigenschaft background-position können Sie dies ändern und das Bild frei nach Ihren Wünschen <br>
+		auf dem Bildschirm positionieren.Es gibt mehrere Wege, dem background-position Werte zuzuweisen.<br>
+		Aber alle haben die Gemeinsamkeit, dass sie als ein Paar Koordinaten angegeben sind. Der Wert <br>
+		‘100px 200px’ z.B. positioniert das Hintergrundbild im Browserfenster 100 Pixel von der linken Seite <br>
+		und 200 Pixel von oben.Diese Koordinaten können als Prozentwert der Bildschirmbreite, feste Größen <br>
+		(Pixel, Zentimeter usw.) oder mit den Worten top (oben), bottom (unten), center (zentriert), <br>
+		left (links) und right (rechts) angegeben werden. Die folgende Darstellung verdeutlicht das Prinzip:</p>
+
+<table  cellspacing="10px">	
+		<tr>
+			<th> Wert </th>
+			<th> Beschreibung</th>			
+		</tr>
+		<tr>
+			<th> background-position: 2cm 2cm</th>
+			<th> Das Bild befindet sich 2 cm vom linken und 2 cm vom oberen Rand der Seite entfernt </th>			
+		</tr>
+		
+		<tr>			
+			<th> background-position: 50% 25% </th>
+			<th> Das Bild ist zentriert und ein Viertel vom oberen Rand entfernt </th>			
+		</tr>		
+		
+			<tr>			
+			<th> background-position: top right </th>
+			<th> Das ist ist in der oberen rechten Ecke der Seite positioniert </th>			
+		</tr>	
+</table>
+	<p>Das nachfolgende Codebeispiel positioniert das Hintergrundbild in der unteren rechten Ecke:</p>
+	<img src="hintergrund-position.jpg" height="175px" width = "600px";>
+	
+	<p>Kombination der Hintergrundeigenschaften: die Eigenschaft ‘background’. Es könnte die obigen Eigenschaften <br> 
+	in einem Zeile kombiniert werden</p>
+	<img src="hintergrund-kombination.jpg" height="175px" width="600px";>
+       
 <p> Paragraph 1: Paragraph ist immer mit p geoeffnet und mit /p geschlossen. Wenn man es noch laengere Text hat <br/> kann man in der zweite Zeile weiter schreiben.</p>
 <p> Paragraph 2:  Das ist zweite Paragraph in der Text.</p>
 
@@ -116,26 +356,7 @@
 <br/> Wenn mann eine Link hinzufuegen moechte, verwendet man  a herf  <a href="dritte.html">ARD Tagesschau</a> Nachrichten<br> Google </a>.
 
 <br/> Das ist <a href="zweiteSeite.html"> <img src="idil2.jpg"  height = "400px"; width="400px";/> </a>
-<table  cellspacing="10px">
-	<tr>
-			<th colspan="3"> Ueberschrift </th>
-	</tr>
-	<tr>
-			<th> Sprache </th>
-			<th> Land </th>
-			<th> Leute </th>
-		</tr>
-		<tr>
-			<td> Spanisch </td>
-			<td> Spanien </td>
-			<td> Spanier </td>
-		</tr>
-		<tr>
-			<td> Deutsch </td>
-			<td> Deutschland </td>
-			<td> Deutscher </td>
-		</tr>
-</table>
+
 
 <ul>
 <li>ich</li>
