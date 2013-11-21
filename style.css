@@ -1,8 +1,13 @@
 body {
 	  background-color: white;
-	  background-image: url("idil.jpg");
+	  background-image: url("doctors.jpg");
 	  background-repeat: no-repeat;
 	  background-attachment: scroll;
+	  
+	   margin-top: 50px;
+	  margin-right: 50px;
+	  margin-bottom: 10px;
+	  margin-left: 250px;
 	}
 	
 	table {
@@ -11,14 +16,35 @@ body {
 		width = "400px";		
 		padding= "5";	
 	}
+	
+	#repeat {
+	background: blue;
+		border = "5";		
+		width = "400px";		
+		padding= "5";	
+		  border-width: thick;
+	  border-style: dotted;
+	  border-color: gold;
+	}
+	
+	#attachment {
+		background: orange;
+		border = "5";		
+		width = "400px";		
+		padding= "5";
+		letter-spacing: 0px;
+  border-width: thick;
+	  border-style: dotted;
+	  border-color: gold;		
+	}
 	                 
 	h1 { 
-	   color: green;	
+	   color: red;	
 	   font-family: arial, verdana, sans-serif;
 	   font-variant: normal;
 	   font-size: 18px;
 	   text-decoration:underline;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 	}
 	
@@ -27,8 +53,8 @@ body {
 	   font-family: "Times New Roman", serif;
 	   font-variant: lowercase;
 	   font-size: 16px;
-	   text-decoration: upper-roman;
 	   text-transform: none;
+	   background-color: yellow;
 	}
 	
 	p {
@@ -41,9 +67,51 @@ body {
 	th{
 	font-family: "Times New Roman", serif;
 	  font-weight: bold;
-	  text-align: left;
+	  text-align: center;
 	}
 	
 	td{
 	font: normal normal 14px arial, serif;
+	text-align: left;
+	}
+	
+	#unbesucht{
+	 color: blue;
+	 font-family:"Times New Roman", serif;
+	 text-decoration:none;
+	}
+	
+	#besucht{
+	 color: purple;
+	 text-decoration:none;
+	}
+	
+	#aktive{
+	 background-color: #FFFF00;
+	  text-decoration:none;
+	}
+	#anime{
+	 color: orange;
+	  font-style: italic;
+	  text-decoration:none;
+	}
+	
+	a:link{
+	 color: blue;
+	 text-decoration:none;
+	}
+	
+	a:visited{
+		color:purple;
+		text-decoration:none;
+	}
+	
+	a:active {
+	  background-color: #FFFF00;
+	  text-decoration:none;
+	}
+	a:hover{
+	color: orange;
+	  font-style: italic;
+	  text-decoration:none;
 	}

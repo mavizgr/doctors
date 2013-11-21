@@ -67,7 +67,7 @@
 	 <img src="background-image.jpg" height="175px" width="600px";	>
 	 
 	 <p> In der folgenden Tabelle sehen Sie die vier verschiedenen Werte, die background-repeat annehmen kann, erläutert.</p>
-	 <table  cellspacing="10px">	
+	 <table  id="repeat" cellspacing="10px">	
 		<tr>
 			<th> Wert </th>
 			<th> Beschreibung</th>			
@@ -103,7 +103,7 @@
 	Tabelle zeigt die zwei verschiedenen Möglichkeiten für die Eigenschaft background-attachment. Klicken Sie auf<br>
 	die Beispiele, um den Unterschied zwischen scrollbar und fixiert zu sehen.</p>
 	
-		 <table  cellspacing="10px">	
+		 <table  id="attachment" cellspacing="10px">	
 		<tr>
 			<th> Wert </th>
 			<th> Beschreibung</th>			
@@ -277,100 +277,74 @@ generische Familien: Generische (oder gattungsmäßige) Familien können wohl am
 	 
 	 
 	 
-	<p> Um z.B. die Wiederholung des Hintergrundbildes zu verhindern, sollte unser Code wie folgt aussehen:</p>
-	<img src="hintergrundwiederholung.jpg" height="175px" width = "600px";>
+	<!-- Hier fängt 4. Lektion mit der Inhalt "Link" an.-->
 	
-	<p> Die Eigenschaft background-attachment legt fest, ob sich ein Hintergrundbild mitscrollen läßt oder nicht. <br>
-	Ein fixiertes Hintergrundbild läßt sich von einem Leser nicht mit dem Text scrollen, währenddessen sich ein <br>
-	nicht fixiertes zusammen mit dem anderen Inhalt der Seite nach oben aus dem Bild schieben läßt. Die folgende<br>
-	Tabelle zeigt die zwei verschiedenen Möglichkeiten für die Eigenschaft background-attachment. Klicken Sie auf<br>
-	die Beispiele, um den Unterschied zwischen scrollbar und fixiert zu sehen.</p>
+	 <h1> <b> Lektion 4: Links<b></h1>
+   <p>Sie können Ihr Wissen aus den vorangegangenen Lektionen auch auf Links anwenden (Farben verändern, Schriftarten, Unterstreichungen usw.) <br>
+   Neu ist aber, dass CSS es Ihnen erlaubt, dies abhängig davon zu gestalten, ob der Link schon besucht (visited) oder noch nicht besucht (link) wurde,<br>
+   gerade angeklickt wird (active) oder nur der Mauszeiger über dem Link platziert ist (hover). Dadurch kann man seiner Webseite tolle und nützliche 
+   Effekte hinzufügen. Um diese Effekte zu steuern, benutzt man sog. Pseudoklassen (pseudo-classes).</p>
+   
+  
+	<h3> <b> Was ist eine Pseudoklasse?<b></h3> 	
+	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen <br>
+	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a <br>
+	 zum ansprechen der Links im HTML-Dokument:</p>	
+		 
+	 <p> Ein Link kann verschiedene Zustände haben. Er kann z.B. besucht oder noch nicht besucht worden sein. Sie können die folgenden <br>
+	 Pseudoklassen verwenden, um dies darzustellen: </p>
+	 <img src="link_visited.jpg" height="175px" width="600px";	>	 
+	 
+	 
+	 <p> Die Pseudoklasse :active benutzt man für aktive Links, also solche, die gerade angeklickt werden.<br>
+	 Das nachfolgende Beispiel gibt den aktiven Links eine gelbe Hintergrundfarbe:</p>
+	 <img src="link-active.jpg" height="175px" width="600px";	>
+	 
 	
-		 <table  cellspacing="10px">	
-		<tr>
-			<th> Wert </th>
-			<th> Beschreibung</th>			
-		</tr>
-		<tr>
-			<th> background-attachment: scroll</th>
-			<th> Das Bild scrollt mit der Seite - nicht fixiert </th>			
-		</tr>
-		
-		<tr>			
-			<th> background-attachment: fixed </th>
-			<th> Das Bild ist fixiert </th>			
-		</tr>		
-</table>
-	<p>Im nachfolgenden Code ist das Hintergrundbild fixiert.</p>
-	<img src="hintergrund-fix.jpg" height="175px" width = "600px";>
-	
-	
-		<p> Standardmäßig wird das Hintergrundbild in der oberen linken Ecke das Bildschirmes festgesetzt. <br>
-		Mit der Eigenschaft background-position können Sie dies ändern und das Bild frei nach Ihren Wünschen <br>
-		auf dem Bildschirm positionieren.Es gibt mehrere Wege, dem background-position Werte zuzuweisen.<br>
-		Aber alle haben die Gemeinsamkeit, dass sie als ein Paar Koordinaten angegeben sind. Der Wert <br>
-		‘100px 200px’ z.B. positioniert das Hintergrundbild im Browserfenster 100 Pixel von der linken Seite <br>
-		und 200 Pixel von oben.Diese Koordinaten können als Prozentwert der Bildschirmbreite, feste Größen <br>
-		(Pixel, Zentimeter usw.) oder mit den Worten top (oben), bottom (unten), center (zentriert), <br>
-		left (links) und right (rechts) angegeben werden. Die folgende Darstellung verdeutlicht das Prinzip:</p>
-
-<table  cellspacing="10px">	
-		<tr>
-			<th> Wert </th>
-			<th> Beschreibung</th>			
-		</tr>
-		<tr>
-			<th> background-position: 2cm 2cm</th>
-			<th> Das Bild befindet sich 2 cm vom linken und 2 cm vom oberen Rand der Seite entfernt </th>			
-		</tr>
-		
-		<tr>			
-			<th> background-position: 50% 25% </th>
-			<th> Das Bild ist zentriert und ein Viertel vom oberen Rand entfernt </th>			
-		</tr>		
-		
-			<tr>			
-			<th> background-position: top right </th>
-			<th> Das ist ist in der oberen rechten Ecke der Seite positioniert </th>			
-		</tr>	
-</table>
-	<p>Das nachfolgende Codebeispiel positioniert das Hintergrundbild in der unteren rechten Ecke:</p>
-	<img src="hintergrund-position.jpg" height="175px" width = "600px";>
-	
-	<p>Kombination der Hintergrundeigenschaften: die Eigenschaft ‘background’. Es könnte die obigen Eigenschaften <br> 
-	in einem Zeile kombiniert werden</p>
-	<img src="hintergrund-kombination.jpg" height="175px" width="600px";>
+	 <p> Die Pseudoklasse :hover wird angewendet, wenn der Mauszeiger auf einem Link platziert wird.Das kann <br>
+	 verwendet werden, um interessante Effekte zu kreieren. Wenn man beispielsweise möchte, dass seine Links orange<br>
+	 und kursiv geschrieben werden, wenn der Mauszeiger sie berührt, dann sollte das CSS so aussehen:</p>
+	<img src="link-hover.jpg" height="175px" width="600px";	>
+	<p> Links Beispiele:</p>
+	 <p> Das ist ein Beispiel-Link für den Code "link", das für nicht besuchten Seite zuständig ist. <a href="https://www.google.de/" id="unbesucht">Dies ist ein unbesuchter Link führt zu Google.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link-visited", das für schon besuchten Seite zuständig ist. <a href="https://www.google.de/" id="besucht">Dies ist ein besuchter Link.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link-active", Wenn man Link mit Maus gedrückt halten, dann wird dieses Link aktiviert. <a href="https://www.google.de/">Drücken und Halten.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link-hover", das eine Animation rausgibt, wenn man  Mauszeiger auf dem Link haltet. <a href="https://www.google.de">Mauszeiger auf dem Link bringen.</a></p>
        
-<p> Paragraph 1: Paragraph ist immer mit p geoeffnet und mit /p geschlossen. Wenn man es noch laengere Text hat <br/> kann man in der zweite Zeile weiter schreiben.</p>
-<p> Paragraph 2:  Das ist zweite Paragraph in der Text.</p>
-
- Das ist eine lange text, mit "br/" kann man es zweite Zeile schieben, <br/> wo man zweite Zeile weiter schreiben muss.
-
-<br/> Wenn man ein Wort oder eine ganze Saetze betonen moechte, kann man es mit dem Befehl <strong> strong </strong> schreiben.
-<br/> Kursiv wird mit dem Befehl <em> em </em> verwirklicht. 
- 
-<br/> <img src="idil.jpg"  height="400px"; width="400px";/>
-
-
-<p> Wenn man bilder hochlaedt, sollte man vorher die groesse bestimmen. Die groesse in der HTML zu verkleinern, bringt nicht zu viel.
-<br/> Wenn mann eine Link hinzufuegen moechte, verwendet man  a herf  <a href="dritte.html">ARD Tagesschau</a> Nachrichten<br> Google </a>.
-
-<br/> Das ist <a href="zweiteSeite.html"> <img src="idil2.jpg"  height = "400px"; width="400px";/> </a>
-
-
-<ul>
-<li>ich</li>
-	<li>bin</li>
-	<li>ungeordnet</li>
-
-</ul>
-
-<ol>
-	<li>Ich</li>
-	<li>bin</li>
-	<li>geordnet</li>
-</ol>
-
-
+	
+	
+	<!-- Hier fängt 5. Lektion mit der Inhalt Identifikation und Gruppierung der Elemente an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet widr.-->
+	
+	<h1> <b> Lektion 5: Identifikation und Gruppierung von Elementen (class und id)<b></h1>
+   <p>Manchmal möchte man einen speziellen Stil nur einem bestimmten Element oder eine Gruppe von Elementen zuweisen.<br>
+   In dieser Lektion werden wir uns genauer anschauen, wie man class und id nutzen kann, um Eigenschaften für ausgewählte <br>
+   Elemente festzulegen.</p>
+   
+  
+	<h3> <b>1- Gruppieren von Elementen in Klassen (class)<b></h3> 	
+	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen <br>
+	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a <br>
+	 zum ansprechen der Links im HTML-Dokument:</p>	
+		 
+	 <p> Nehmen wir an, wir haben zwei Listen mit Links zu verschiedenen Traubensorten, die zur Herstellung von Weiß- oder <br>
+	 Rotwein genommen werden. </p>
+	 
+	 <p> Wir wollen aber, dass die Weißweinlinks gelb und die Rotweinlinks rot werden und die restlichen Links auf der Seite blau bleiben. <br>
+	 Um dies zu erreichen, teilen wir die Links in zwei Kategorien. Dies wird gemacht, indem man jedem Link mit dem Attribut class eine Klasse <br>
+	 zuschreibt. Lassen Sie uns für das obige Beispiel Klassen vergeben:</p>
+	 <img src="class.jpg" height="175px" width="600px";	>	
+	 
+	 <p>Jetzt können wir für Links der Klasse “weisswein” spezielle Eigenschaften vergeben. Für “rotwein” analog.</p>
+	 <img src="class-beispiel.jpg" height="175px" width="600px";	>
+	 
+	 <h3> <b>2- Identifikation eines bestimmten Elementes (id)<b></h3> 
+	 <p> Zusätzlich zu der Gruppierung der Elemente ist es möglich einzelne Elemente anzusprechen. Dazu braucht man das Attribut id. <br>
+	 Das besondere an dem Attribut id ist, dass es kein weiteres Element im selben Dokument geben kann, welches die selbe id trägt. <br>
+	 Jede id muss einzigartig sein. In anderen Fällen nutzen Sie besser das Attribut class</p>
+	<img src="id-beispiel.jpg" height="175px" width="600px";	>
+	
+	<p> Nehmen wir an, die Überschrift für Kapitel 1.2 muss unbedingt rot sein. Dies können wir mit CSS wie folgt bewerkstelligen:</p>
+	<img src="id-beispiel1.jpg" height="175px" width="600px";>
+	
  </body>
 </html>
