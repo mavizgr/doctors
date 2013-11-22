@@ -46,6 +46,12 @@ body {
 	   text-decoration:underline;
 		letter-spacing: 1px;
 		text-transform: uppercase;
+		 background: yellow;
+	  padding: 20px 20px 20px 80px;
+	  
+	   border-width: thick;
+	  border-style: dotted;
+	  border-color: gold;
 	}
 	
 	h3 { 
@@ -55,14 +61,32 @@ body {
 	   font-size: 16px;
 	   text-transform: none;
 	   background-color: yellow;
+	    background: orange;
+	  padding-left:120px;
+	  
+	    border-top-width: thick;
+	  border-top-style: solid;
+	  border-top-color: red;
+	  
+	  border-bottom-width: thick;
+	  border-bottom-style: solid;
+	  border-bottom-color: blue;
+	  
+	  border-right-width: thick;
+	  border-right-style: solid;
+	  border-right-color: green;
+	  
+	  border-left-width: thick;
+	  border-left-style: solid;
+	  border-left-color: orange;
 	}
 	
 	p {
-	 text-indent: 30px;
+		text-indent: 30px;
 		font: normal normal 14px arial, sans-serif;
 		text-align: justify;
 		letter-spacing: 0px;
-	}
+		}
 	
 	th{
 	font-family: "Times New Roman", serif;
@@ -114,4 +138,40 @@ body {
 	color: orange;
 	  font-style: italic;
 	  text-decoration:none;
+	}
+	
+	#spd {
+	  background:red;
+	  color:white;
+	}
+
+	#cducsu {
+	  background:black;
+	  color:white;
+	}
+	
+	ul {
+	  border-width: 10px;
+	  border-style: solid;
+	  border-color: orange;
+	}
+	
+	div.box {
+	  height: 500px;
+	  width: 200px;
+	  border: 1px solid black;
+	  background: orange;
+	}
+	#picture {
+	  float:left;
+	  width: 275px;
+	}
+	
+	
+	p.floatstop {
+	text-indent: 10px;
+		font: normal normal 14px arial, sans-serif;
+		text-align: justify;
+		letter-spacing: 0px;
+	 /* <!-- clear:both; uygulanan float metodunu nötr hale getirmek icin kullanilir. Alabilecegi degerler, right,left,both,top,bottom.-->*/ 
 	}
