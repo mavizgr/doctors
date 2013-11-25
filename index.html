@@ -6,8 +6,74 @@
 	<link rel="stylesheet" type="text/css" href="source/style.css" />		
 </head>
 <body> 
-	<h1 id="hoch"> CSS Tutorial </h1>
+	<h1 id="hoch"> CSS Tutorial </h1>	
+	<table border="5" >
+  <tr>
+    <th><a href="index.html"> Einleitung </a></th>
+    <th><a href="basis-themen.html"> Basis-Themen </a></th>
+	<th><a href="advanced-themen.html"> Advanced </a></th>
+	<th><a href="css3-themen.html"> Einleitung </a></th>
+  </tr>
+  <tr>
+    <td align="left" >
+		<ul>
+			<li> Was ist CSS?</li>
+			<li>  Was kann ich mit CSS machen?</li>
+			<li> Wo ist der Unterschied zwischen CSS und HTML?</li>
+			<li> Wo wird CSS-Code geschrieben?</li>	
+		</ul>
+	</td>
 	
+    <td align="left" >
+		<ol>
+			<li> Farben und Hintergründe</li>
+			<li> Zeichensätze (Fonts)</li>
+			<li> Text formatieren</li>
+			<li> Links</li>	
+			<li> Identifikation und Gruppierung von Elementen (class und id)</li>
+			<li> Gruppierung von Elementen (span und div)</li>
+			<li> Das Box-Modell</li>
+			<li>  Umrandung (border)</li>	
+			<li>  Breite und Höhe</li>	
+			<li>  Schwimmende Positionierung von Elementen (float)</li>	
+			<li>  Positionierung von Elementen</li>	
+			<li>  Ebene auf Ebene mit z-index (Layer) (float)</li>	
+		</ol>
+	</td>
+    <td align="left" >
+		<ol>
+			<li> Grouping/Nesting</li>
+			<li> Dimension</li>
+			<li> Display</li>
+			<li> Pseudo-element</li>	
+			<li> Navigation Bar</li>
+			<li> Image Gallery</li>
+			<li> Image Opacity</li>
+			<li> Image Sprites</li>	
+			<li> Media Types</li>	
+			<li> Attr Selectors</li>		
+		</ol>
+	</td>
+	
+	  <td>
+		<ol>
+			<li> Introduction</li>
+			<li> Borders</li>
+			<li> Backgrounds</li>
+			<li> Gradients</li>	
+			<li> Text Effects</li>
+			<li> Fonts</li>
+			<li> 2D Transforms</li>
+			<li> 3D Transforms</li>	
+			<li> Transitions</li>	
+			<li> Animations</li>	
+			<li> Multiple Column</li>
+			<li> User Interface</li>
+			<li> Summary</li>			
+		</ol>
+	</td>
+  </tr>
+</table>
 
 	<h1> <b> Was ist ein CSS? <b></h1>   
 	<p> Cascading Style Sheets (CSS) sind ein fantastisches Werkzeug, um Ihre Webseiten zu layouten, ihnen ein Aussehen zu verpassen. <br>
@@ -33,490 +99,10 @@
 		andere Datei auch, können Sie das Stylesheet auf Ihrem Webserver oder Ihrer Festplatte <br>
 		speichern.Nehmen wir an, Ihr Stylesheet heißt style.css und befindet sich im Ordner style.</p>
 		<img src="source/extern.jpg"  height="175px"; width="600px";/>
-   
-   <h1> <b> Lektion-1: Farben und Hintergründe<b></h1>   
-    <ul>       
-        <li> color </li>
-		<li> background-color</li>
-		<li> background-image </li>
-		<li> background-repeat </li>
-		<li> background-attachment </li>
-		<li> background-position </li>
-     </ul>	 
-	 <p> Nehmen wir an, wir möchten, dass alle Überschriften in einem Dokument rot sind. Alle Überschriften sind mit dem HTML-Element "h1" markiert. <br>
-	 Der nachfolgende Code setzt die Farbe von "h1"-Elementen auf rot. </p>	 
-	 <img src="source/color.jpg" height="175px" width="600px";>	 
-	 <p> Die Eigenschaft background-color beschreibt die Hintergrundfarbe eines Elementes.<br>
-	 Das Element <body> enthält jeglichen Inhalt eines HTML-Dokumentes. Darum sollte, <br> 
-	 um die Hintergrundfarbe der ganzen Seite zu ändern, die Eigenschaft ‘background-color’ <br> 
-	 dem "body"-Element zugewiesen werden. Sie können auch anderen Elementen, wie z.B. Überschriften <br>
-	 oder normalem Text, eine Hintergrundfarbe zuweisen. Im folgenden Beispiel sind dem "body"- und den <br>
-	 "h1"-Elementen verschiedene Hintergrundfarben zugewiesen. </p>
-	 <img src="source/background-color.jpg" height="175px" width="600px";	>	 
-	 
-	 <p> Die CSS-Eigenschaft background-image wird benutzt, um ein Hintergrundbild einzufügen.<br>
-		Hier wird die Hintergrund-image für ganzen Body Element hinzugefügt.</p>
-	 <img src="source/background-image.jpg" height="175px" width="600px";	>
-	 
-	 <p> In der folgenden Tabelle sehen Sie die vier verschiedenen Werte, die background-repeat annehmen kann, erläutert.</p>
-	 <table  id="repeat" cellspacing="10px">	
-		<tr>
-			<th> Wert </th>
-			<th> Beschreibung</th>			
-		</tr>
-		<tr>
-			<td> background-repeat: repeat-x </td>
-			<td> Das Bild wird horizontal wiederholt </td>			
-		</tr>
-		
-		<tr>			
-			<td> background-repeat: repeat-y </td>
-			<td> Das Bild wird vertikal wiederholt </td>			
-		</tr>
-		
-		<tr>			
-			<td> background-repeat: repeat </td>			
-			<td> Das Bild wird sowohl horizontal als auch vertikal wiederholt </td>		
-		</tr>
-		
-		<tr>			
-			<td> background-repeat: no-repeat</td>			
-			<td> Das Bild wird nicht wiederholt</td>
-		</tr>
-		
-</table>
-
-	<p> Um z.B. die Wiederholung des Hintergrundbildes zu verhindern, sollte unser Code wie folgt aussehen:</p>
-	<img src="source/hintergrundwiederholung.jpg" height="175px" width = "600px";>
-	
-	<p> Die Eigenschaft background-attachment legt fest, ob sich ein Hintergrundbild mitscrollen läßt oder nicht. <br>
-	Ein fixiertes Hintergrundbild läßt sich von einem Leser nicht mit dem Text scrollen, währenddessen sich ein <br>
-	nicht fixiertes zusammen mit dem anderen Inhalt der Seite nach oben aus dem Bild schieben läßt. Die folgende<br>
-	Tabelle zeigt die zwei verschiedenen Möglichkeiten für die Eigenschaft background-attachment. Klicken Sie auf<br>
-	die Beispiele, um den Unterschied zwischen scrollbar und fixiert zu sehen.</p>
-	
-		 <table  id="attachment" cellspacing="10px">	
-		<tr>
-			<th> Wert </th>
-			<th> Beschreibung</th>			
-		</tr>
-		<tr>
-			<td> background-attachment: scroll</td>
-			<td> Das Bild scrollt mit der Seite - nicht fixiert </td>			
-		</tr>
-		
-		<tr>			
-			<td> background-attachment: fixed </td>
-			<td> Das Bild ist fixiert </td>			
-		</tr>		
-</table>
-	<p>Im nachfolgenden Code ist das Hintergrundbild fixiert.</p>
-	<img src="source/hintergrund-fix.jpg" height="175px" width = "600px";>
-	
-	
-		<p> Standardmäßig wird das Hintergrundbild in der oberen linken Ecke das Bildschirmes festgesetzt. <br>
-		Mit der Eigenschaft background-position können Sie dies ändern und das Bild frei nach Ihren Wünschen <br>
-		auf dem Bildschirm positionieren.Es gibt mehrere Wege, dem background-position Werte zuzuweisen.<br>
-		Aber alle haben die Gemeinsamkeit, dass sie als ein Paar Koordinaten angegeben sind. Der Wert <br>
-		‘100px 200px’ z.B. positioniert das Hintergrundbild im Browserfenster 100 Pixel von der linken Seite <br>
-		und 200 Pixel von oben.Diese Koordinaten können als Prozentwert der Bildschirmbreite, feste Größen <br>
-		(Pixel, Zentimeter usw.) oder mit den Worten top (oben), bottom (unten), center (zentriert), <br>
-		left (links) und right (rechts) angegeben werden. Die folgende Darstellung verdeutlicht das Prinzip:</p>
-
-<table  cellspacing="10px">	
-		<tr>
-			<th> Wert </th>
-			<th> Beschreibung</th>			
-		</tr>
-		<tr>
-			<td> background-position: 2cm 2cm</td>
-			<td> Das Bild befindet sich 2 cm vom linken und 2 cm vom oberen Rand der Seite entfernt </td>			
-		</tr>
-		
-		<tr>			
-			<td> background-position: 50% 25% </td>
-			<td> Das Bild ist zentriert und ein Viertel vom oberen Rand entfernt </td>			
-		</tr>		
-		
-			<tr>			
-			<td> background-position: top right </td>
-			<td> Das ist ist in der oberen rechten Ecke der Seite positioniert</td>			
-		</tr>	
-</table>
-	<p>Das nachfolgende Codebeispiel positioniert das Hintergrundbild in der unteren rechten Ecke:</p>
-	<img src="source/hintergrund-position.jpg" height="175px" width = "600px";>
-	
-	<p>Kombination der Hintergrundeigenschaften: die Eigenschaft ‘background’. Es könnte die obigen Eigenschaften <br> 
-	in einem Zeile kombiniert werden</p>
-	<img src="source/hintergrund-kombination.jpg" height="175px" width="600px";>
-	 
-	<!-- Hier fängt die zweite Lektion mit der Inhalt Zeichensätze(Fonts) -->  
-	
-	
-	 <h1> <b> Lektion 2: Zeichensätze (Fonts)<b></h1>
-   <p>In dieser Lektion werden Sie mehr darüber erfahren, wie Zeichensätze mit Hilfe von CSS eingebunden werden können. <br>
-   Wir werden auch zeigen, wie man dem Problem begegnen kann, dass eine bestimmte (besondere) Schriftart, welche Sie für <br>
-   Ihre Webseite ausgesucht haben, nicht angezeigt wird, wenn auf dem betreffenden Rechner selbige Schriftart nicht installiert ist. </p>
-   
-    <ul>       
-        <li> font-family</li>
-		<li> font-style</li>
-		<li> font-variant </li>
-		<li> font-weight</li>
-		<li> font-size </li>
-		<li> font </li>
-     </ul>
-	
-
-	<h3> <b> 1- Zeichensatzfamilie: die Eigenschaft ‘font-family’ <b></h3> 	
-	 <p> Die Eigenschaft font-family wird verwendet, um eine priorisierende Liste der Zeichensätze anzugeben, in der ein bestimmtes Element <br>
-	 oder eine Webseite angezeigt werden soll. Wenn der erste Zeichensatz nicht auf dem Computer, mit dem die Seite betrachtet wird, installiert ist, <br>
-	 wird der nächstfolgende probiert, bis ein vorhandener bzw. passender Zeichensatz gefunden ist.
-<br>
-	Es gibt zwei Arten, wie man Zeichensätze kategorisieren kann: Schriftfamilien und generische (gattungsmäßige) Familien. Die beiden Ausdrücke <br>
-	werden nachfolgend erklärt.
-<br>
-Schriftfamilien: Beispiele für eine Schriftfamilie (oft auch nur “Schriftart” oder “font” genannt) sind z.B. “Arial”, “Times New Roman” oder “Tahoma”.
-<br>
-generische Familien: Generische (oder gattungsmäßige) Familien können wohl am besten als Gruppen von Schriftartfamilien beschrieben werden, die ein <br>
-ähnliches Aussehen haben. Als Beispiel sei hier “sans-serif” genannt, welches Schriftarten umfaßt, die keine “Füßchen” haben.</p>	
-
-<p> Ein Beispiel für solch eine priorisierende Liste der Zeichensätze könnte wie folgt aussehen: </p>
-	 <img src="source/font-family.jpg" height="175px" width="600px";>
-	 
-	<h3> <b> 2- Schriftstil: die Eigenschaft ‘font-style’ <b></h3>  
-	 
-	 <p> Die Eigenschaft font-style weißt dem betreffenden Element die Stile normal (kein Stil), italic (kursiv) oder oblique (schräg) zu.<br> 
-	 Im folgenden Beispiel werden alle Überschriften, die mit "h2" markiert sind, kursiv geschrieben. </p>
-	 <img src="source/font-style.jpg" height="175px" width="600px";	>	 
-	 
-	 <h3> <b> 3- Schriftvarianten: die Eigenschaft ‘font-variant‘ <b></h3>  
-	 <p> Mit der Eigenschaft font-variant kann man zwischen normal oder small-caps wählen. Bei small-caps benutzt die Schriftart anstatt der <br>
-	 Kleinbuchstaben (lower-case), kleiner geschriebene Großbuchstaben (upper-case). Verwirrt? Sehen Sie sich die Beispiele an:</p>
-	 <img src="source/font-variant.jpg" height="175px" width="600px";	>
-	 
-	 <h3> <b> 4- Schriftgewichtung: die Eigenschaft ‘font-weight’<b></h3>  
-	 <p> Mit der Eigenschaft font-weight gibt man an, wie fett oder “schwer” eine Schriftart angezeigt werden soll. Eine Schrift kann entweder<br>
-	 normal oder bold (fett) dargestellt werden. Einige Browser unterstützen auch die Angabe der Zahlen 100-900 (nur volle Hunderter) um eine feiner<br>
-	 abgestufte Darstellung zu erreichen.</p>
-	 <img src="source/font-weight.jpg" height="175px" width="600px";	>
-	 
-	 <h3> <b> 5- Schriftgröße: die Eigenschaft ‘font-size’<b></h3>  
-	 <p> Die Schriftgröße wird durch die Eigenschaft font-size festgelegt. <br>
-	 Man kann viele verschiedene Einheiten (z.B. Pixel und Prozentwerte) verwenden um die Größen zu beschreiben. In diesem Tutorial werden <br>
-	 wir uns auf die meistgebrauchten und zweckmäßigsten Einheiten konzentrieren. Beispiele sind:</p>
-	 <img src="source/font-size.jpg" height="175px" width="600px";	>
-	 
-	 
-	 <h3> <b> 6- Kombinationder  Eigenschaft ‘font’<b></h3>  
-	 <p>Mit Hilfe der font-Eigenschaft können Sie alle Schrift-Eigenschaften in dieser einen Eigenschaft vereinen. Stellen Sie sich z.B. die folgenden<br>
-	 vier Codezeilen vor, die die Schrifteigenschaften für "p" angeben:</p>
-	 <img src="source/kombination-font.jpg" height="175px" width="600px";	>
-	 
-	
-<!-- ab hier fängt dann Lektion 3: Text an..-->
-
- <h1> <b> Lektion 3: Text formatieren<b></h1>
-   <p>Texte zu formatieren, ist eine der Hauptaufgaben für jeden Webdesigner. In dieser Lektion werden wir zeigen, welche unglaublichen Möglichkeiten <br>
-   CSS bietet,   um einen Text nach mehr aussehen zu lassen. Die folgenden Eigenschaften werden beschrieben: </p>
-   
-    <ul>       
-        <li> text-indent</li>
-		<li> text-align</li>
-		<li> text-decoration </li>
-		<li> text-spacing</li>
-		<li> text-transform</li>
-     </ul>
-	
-
-	<h3> <b> 1- Texteinrückung: die Eigenschaft ‘text-indent’ <b></h3> 	
-	 <p> Die Eigenschaft text-indent erlaubt es Ihnen, Ihrem Text einen eleganten Touch zu geben, indem Sie die erste Zeile eines Absatzes einrücken.<br>
-	 Im folgenden Beispiel werden alle Absätze, die mit "p" markiert sind, um 30px eingerückt:</p>	
-	 <img src="source/text-indent.jpg" height="175px" width="600px";>
-	 
-	<h3> <b> 2- Textausrichtung: die Eigenschaft ‘text-align’ <b></h3>  
-	 
-	 <p> Die CSS-Eigenschaft text-align ist mit dem Attribut align vergleichbar, welches in älteren HTML-Versionen verwendet wurde. Text kann entweder <br>
-	 left (links), right (rechts) oder center (zentriert) ausgerichtet werden. Außerdem steht der Wert justify für Blocksatz zur Verfügung, d.h. jede Zeile <br>
-	 wird so gestreckt, dass alle gleich lang sind. Dies kennen Sie vielleicht aus Zeitungen und Zeitschriften. Im unten stehenden Beispiel ist der Text in <br>
-	 Tabellenköpfen "th" (table header) rechts ausgerichtet, während er in normalen Tabellenzellen "td" zentriert wird. Zusätzlich werden normale Absätze im <br>
-	 Blocksatz geschrieben: </p>
-	 <img src="source/text-align.jpg" height="175px" width="600px";	>	 
-	 
-	 <h3> <b> 3- Textdekoration: die Eigenschaft ‘text-decoration’ <b></h3>  
-	 <p> Mit der Eigenschaft text-decoration ist es möglich, Texte verschiedenartig zu “dekorieren” oder Ihnen “Effekte” zu verleihen. Sie können Texte  <br>
-	 unterstreichen, durchstreichen oder eine Linie darüber zeichnen lassen. Im folgenden Beispiel sind "h1"-Überschriften unterstrichen, "h2"-Überschriften <br>
-	 haben eine Linie über dem Text und "h3"-Überschriften sind durchgestrichen.</p>
-	 <img src="source/text-decoration.jpg" height="175px" width="600px";	>
-	 
-	 <h3> <b> 4- Laufweite (Abstand zwischen den Buchstaben): die Eigenschaft ‘letter-spacing’<b></h3>  
-	 <p> Die Laufweite von Text kann mit der Eigenschaft letter-spacing verändert werden. Der Wert, den die Eigenschaft annimmt, ist einfach der gewünschte Abstand<br>
-	 der Buchstaben. Wenn Sie z.B. eine Laufweite von 3px für Ihre Textabsätze "p" und 6px für "h1"-Überschriften wünschen, kann der nachfolgende Code verwendet werden.</p>
-	 <img src="source/text-spacing.jpg" height="175px" width="600px";	>
-	 
-	 <h3> <b> 5- Texttransformation: die Eigenschaft ‘text-transform’<b></h3>  
-	 <p> Mit der Eigenschaft text-transform kann man die Groß- und Kleinschreibung eines Textes kontrollieren. Sie können wählen zwischen capitalize, uppercase oder lowercase<br>
-	 wählen, egal wie der Ursprungstext im HTML-Code aussieht.</p>
-	 <img src="source/text-transform.jpg" height="175px" width="600px";	>
-	 
-	 
-	 <h3> <b> 6- Kombinationder  Eigenschaft ‘font’<b></h3>  
-	 <p>Mit Hilfe der font-Eigenschaft können Sie alle Schrift-Eigenschaften in dieser einen Eigenschaft vereinen. Stellen Sie sich z.B. die folgenden<br>
-	 vier Codezeilen vor, die die Schrifteigenschaften für "p" angeben:</p>
-	 <img src="source/kombination-font.jpg" height="175px" width="600px";	>
-	 
-	 <!-- bis hier her-->
-	 
-	 
-	 
-	<!-- Hier fängt 4. Lektion mit der Inhalt "Link" an.-->
-	
-	 <h1> <b> Lektion 4: Links<b></h1>
-   <p>Sie können Ihr Wissen aus den vorangegangenen Lektionen auch auf Links anwenden (Farben verändern, Schriftarten, Unterstreichungen usw.) <br>
-   Neu ist aber, dass CSS es Ihnen erlaubt, dies abhängig davon zu gestalten, ob der Link schon besucht (visited) oder noch nicht besucht (link) wurde,<br>
-   gerade angeklickt wird (active) oder nur der Mauszeiger über dem Link platziert ist (hover). Dadurch kann man seiner Webseite tolle und nützliche 
-   Effekte hinzufügen. Um diese Effekte zu steuern, benutzt man sog. Pseudoklassen (pseudo-classes).</p>
-   
-  
-	<h3> <b> Was ist eine Pseudoklasse?<b></h3> 	
-	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen <br>
-	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a <br>
-	 zum ansprechen der Links im HTML-Dokument:</p>	
-		 
-	 <p> Ein Link kann verschiedene Zustände haben. Er kann z.B. besucht oder noch nicht besucht worden sein. Sie können die folgenden <br>
-	 Pseudoklassen verwenden, um dies darzustellen: </p>
-	 <img src="source/link_visited.jpg" height="175px" width="600px";	>	 
-	 
-	 
-	 <p> Die Pseudoklasse :active benutzt man für aktive Links, also solche, die gerade angeklickt werden.<br>
-	 Das nachfolgende Beispiel gibt den aktiven Links eine gelbe Hintergrundfarbe:</p>
-	 <img src="source/link-active.jpg" height="175px" width="600px";	>
-	 
-	
-	 <p> Die Pseudoklasse :hover wird angewendet, wenn der Mauszeiger auf einem Link platziert wird.Das kann <br>
-	 verwendet werden, um interessante Effekte zu kreieren. Wenn man beispielsweise möchte, dass seine Links orange<br>
-	 und kursiv geschrieben werden, wenn der Mauszeiger sie berührt, dann sollte das CSS so aussehen:</p>
-	<img src="source/link-hover.jpg" height="175px" width="600px";	>
-	<p> Links Beispiele:</p>
-	 <p> Das ist ein Beispiel-Link für den Code "link", das für nicht besuchten Seite zuständig ist. <a href="https://www.google.de/" id="unbesucht">Dies ist ein unbesuchter Link führt zu Google.</a></p>
-	 <p> Das ist ein Beispiel-Link für den Code "link-visited", das für schon besuchten Seite zuständig ist. <a href="https://www.google.de/" id="besucht">Dies ist ein besuchter Link.</a></p>
-	 <p> Das ist ein Beispiel-Link für den Code "link-active", Wenn man Link mit Maus gedrückt halten, dann wird dieses Link aktiviert. <a href="https://www.google.de/">Drücken und Halten.</a></p>
-	 <p> Das ist ein Beispiel-Link für den Code "link-hover", das eine Animation rausgibt, wenn man  Mauszeiger auf dem Link haltet. <a href="https://www.google.de">Mauszeiger auf dem Link bringen.</a></p>
-       
-	
-	
-	<!-- Hier fängt 5. Lektion mit der Inhalt Identifikation und Gruppierung der Elemente an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet widr.-->
-	
-	<h1> <b> Lektion 5: Identifikation und Gruppierung von Elementen (class und id)<b></h1>
-   <p>Manchmal möchte man einen speziellen Stil nur einem bestimmten Element oder eine Gruppe von Elementen zuweisen.<br>
-   In dieser Lektion werden wir uns genauer anschauen, wie man class und id nutzen kann, um Eigenschaften für ausgewählte <br>
-   Elemente festzulegen.</p>
-   
-  
-	<h3> <b>1- Gruppieren von Elementen in Klassen (class)<b></h3> 	
-	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen <br>
-	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a <br>
-	 zum ansprechen der Links im HTML-Dokument:</p>	
-		 
-	 <p> Nehmen wir an, wir haben zwei Listen mit Links zu verschiedenen Traubensorten, die zur Herstellung von Weiß- oder <br>
-	 Rotwein genommen werden. </p>
-	 
-	 <p> Wir wollen aber, dass die Weißweinlinks gelb und die Rotweinlinks rot werden und die restlichen Links auf der Seite blau bleiben. <br>
-	 Um dies zu erreichen, teilen wir die Links in zwei Kategorien. Dies wird gemacht, indem man jedem Link mit dem Attribut class eine Klasse <br>
-	 zuschreibt. Lassen Sie uns für das obige Beispiel Klassen vergeben:</p>
-	 <img src="source/class.jpg" height="175px" width="600px";	>	
-	 
-	 <p>Jetzt können wir für Links der Klasse “weisswein” spezielle Eigenschaften vergeben. Für “rotwein” analog.</p>
-	 <img src="source/class-beispiel.jpg" height="175px" width="600px";	>
-	 
-	 <h3> <b>2- Identifikation eines bestimmten Elementes (id)<b></h3> 
-	 <p> Zusätzlich zu der Gruppierung der Elemente ist es möglich einzelne Elemente anzusprechen. Dazu braucht man das Attribut id. <br>
-	 Das besondere an dem Attribut id ist, dass es kein weiteres Element im selben Dokument geben kann, welches die selbe id trägt. <br>
-	 Jede id muss einzigartig sein. In anderen Fällen nutzen Sie besser das Attribut class</p>
-	<img src="source/id-beispiel.jpg" height="175px" width="600px";	>
-	
-	<p> Nehmen wir an, die Überschrift für Kapitel 1.2 muss unbedingt rot sein. Dies können wir mit CSS wie folgt bewerkstelligen:</p>
-	<img src="source/id-beispiel1.jpg" height="175px" width="600px";>
-	
-	<!-- Hier fängt 6. Lektion mit der Inhalt Gruppierung von Elementen (span und div) an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet wird.-->
-	
-	<h1> <b> Lektion 6: Gruppierung von Elementen (span und div)<b></h1>
-   <p>Die Elemente "span" und "div" werden zum gruppieren und strukturieren eines Dokumentes benutzt und sehr oft mit den Attributen <br>
-   class und id verwendet. In dieser Lektion werfen wir einen genaueren Blick auf die Benutzung von "span" und "div", da genau diese beiden <br>
-   HTML-Elemente von zentraler Bedeutung für den Aufbau von Webseiten mit Hilfe von CSS ist.</p>
-   
-  
-	<h3> <b>1- Gruppieren mit "span" <b></h3> 	
-	 <p> Das Element "span" ist ein neutrales Element, welches dem Dokument eigentlich nichts hinzufügt. Aber zusammen mit CSS, kann "span"<br>
-	 dazu benutzt werden, um visuelle Besonderheiten an bestimmten Textstellen im Dokument einzufügen.</p>	
-	 <img src="source/span.jpg" height="175px" width="600px";	>	
-	 
-	 <h3> <b>2- Gruppieren mit "div"<b></h3> 
-	 <p> Während "span", wie im vorhergehenden Beispiel gesehen, innerhalb eines Block-Level-Element gebraucht wird, wird "div" benutzt, <br>
-	 um eines oder mehrere Block-Level-Element zu gruppieren. Neben diesem Unterschied funktioniert das gruppieren mit "div" aber mehr oder<br>
-	 weniger in der gleichen Art und Weise. Schauen wir uns ein Beispiel mit den jeweils letzten drei Bundeskanzlern von SPD bzw. CDU/CSU, <br>
-	 aufgeteilt nach den Parteien, denen diese entstammen:</p>
-	<img src="source/div.jpg" height="450px" width="600px";	> <br>
-     <a href="div-beispiel.html">Beispiel Link</a>
-	 
-	 
-	<!-- Hier fängt 7. Lektion mit der Inhalt  Box-Modell an. -->	
-	<h1> <b> Lektion 7: Das Box-Modell<b></h1>
-   <p>Das Box-Modell in CSS beschreibt die Boxen (oder Kästen), die für HTML-Elemente generiert werden. Das Box-Modell enthält auch <br>
-   Optionen zum einstellen von Außenabständen (margin), Rändern (border), Innenabständen (padding) und Inhalten (content) für jedes Element.<br>
-   Die folgende Grafik zeigt, wie das Box-Modell konstruiert ist:</p>
-   <img src="source/box-modell.jpg" height="300px" width="400px";	>	 
-
-	<!-- Hier fängt 8. Lektion mit der Inhalt Umrandung (border) an. -->	
-	
-	<h1> <b> Lektion 8: Umrandung (border)<b></h1>
-	<p>Umrandungen (border) können für viele Sachen verwendet werden, z.B. als Dekorationselement oder um die Eigenständigkeit zweier Sachen 
-     zu unterstreichen. CSS bietet unendliche Möglichkeiten, bei der Verwendung von Umrandungen.</p>
-		<ul>
-		<li> border-width</li>
-		<li> border-color</li>
-		<li> border-style </li>			
-		</ul>
-		
-		<h3> Bereite der Umrandung:"border-width" </h3>
-		<p> Die Breite der Umrandung wird mit der Eigenschaft border-width eingestellt. Diese kann die Werte thin (dünn), medium (mittel) 
-		und thick (dick) oder einen numerischen Wert in Pixeln annehmen. </p>
-		
-		<h3> Farbe der Umrandung: "border-color" </h3>
-		<p> Die Eigenschaft border-color gibt an, welche Farbe die Umrandung hat. Werte können die normalen Farbwerte, z.B. “#123456”, 
-		“rgb(123,123,123)” oder “yellow” sein. </p>
-		
-		<h3> Arten der Umrandung:"border-style" </h3>
-		<p>Es gibt verschiedene Umrandungsarten, aus denen Sie auswählen können. Nachfolgend werden acht Typen gezeigt, wie sie vom 
-		Internet-Explorer 5.5 interpretiert werden (in anderen Browser ist es normalerweise ähnlich, wenn nicht gar gleich). Alle sind 
-		in der Farbe “gold” und der Breite “thick”, können aber natürlich auch in jeder anderen Farbe und Breite angezeigt werden.
-		Die Werte none oder hidden können benutzt werden, wenn man keinerlei Umrandung wünscht. </p>
-		
-		<img src="source/border-style.jpg" height="400px" width="200px";>
-		<p> Die drei soeben beschriebenen Eigenschaften können auch – für jedes Element separat – miteinander kombiniert werden und somit 
-		immer neue Umrandungen schaffen. Um dies zu zeigen, schauen wir und ein Dokument an, in dem wir verschiedene Umrandungen für "h1", 
-		"h2", "p" und "ul" definiert haben. Das Ergebnis mag nicht hübsch aussehen, aber es zeigt doch einige der zahlreichen Möglichkeiten:</P>
-		
-		<img src="source/border-code.jpg" height="400px" width="600px";><br>
-			
-		 <a href="border-beispiel.html">Beispiel Link</a>
-		 
-		 <!-- Hier fängt 9. Lektion mit der Inhalt Breite und Höhe an. -->
-		 
-		 <h1> <b> Lektion 9: Breite und Höhe<b></h1>
-	<p>Bisher haben wir uns noch nicht viel um die Größe der Elemente, mit denen wir gearbeitet haben, gekümmert. In dieser Lektion werden wir sehen, 
-	wie einfach man Breite (width) und Höhe (height) eines Elementes einstellen kann.</p>
-		<ul>
-		<li> width</li>
-		<li> heigth</li>		
-		</ul>
-		
-		<h3> Festlegen der Breite: die Eigenschaft ‘width’ </h3>
-		<p>Mit der Eigenschaft width, kann man die gewünschte Breite eines Elementes angeben.Diese einfache Beispiel erstellt eine Box, in der Text 
-		dargestellt werden kann: </p>
-		<p> Im obigen Beispiel wird die Höhe der Box durch ihren Inhalt bestimmt. Man kann aber die Höhe eines Elementes auch mit der Eigenschaft height 
-		beeinflussen. Als Beispiel weisen wir der Box aus unserem Beispiel eine Höhe von 500 Pixel zu: </p>
-		
-		<img src="source/bereite-hohe.jpg" height="200px" width="600px";><br>
-		
-		<div class="box"> volgus rectum videt, est ubi peccat. Si veteres ita miratur laudatque poetas, ut nihil anteferat, nihil illis comparet, errat.
-		Si quaedam nimis antique, si peraque dure dicere credit eos, ignave multa fatetur, et sapit et mecum facit et Iova iudicat aequo.Non equidem 
-		insector delendave carmina Livi esse reor, memini quae plagosum mihi parvo Orbilium </div>	
-		
-		 <!-- Hier fängt 10. Lektion mit der Inhalt Schwimmende Positionierung von Elementen (float) an. -->
-		 
-		 <h1> <b> Lektion 10: Schwimmende Positionierung von Elementen (float)<b></h1>
-	<p>Ein Element kann mit Hilfe der Eigenschaft float auf der linken oder rechten Seite eines Dokumentes (oder der beinhaltenden Box – siehe Lektion 
-	9 für eine Beschreibung des Box-Modells) positioniert werden. Nachfolgende Inhalte umfließen dieses Element. Die Nachfolgende Abbildung zeigt das 
-	Prinzip:</p>
-	<img src="source/float.jpg" height="200px" width="600px";><br>
-			
-		<h3>Wie wird das gemacht?</h3>
-		<p>Der HTML-Code für das obige Beispiel sieht wie folgt aus:</p>
-		<img src="source/picture-billgates-code.jpg" height="200px" width="600px";><br>
-		
-		<p> Um das Bild links zu positionieren und es durch den Text umfließen zu lassen, muss man nur die Breite der Box um das Bild angeben und dessen 
-		Eigenschaft float auf left setzen:</p>
-		<img src="source/picture.jpg" height="200px" width="600px";><br>
-		<p> Beispiel wurde unten dargestellt:</p>				
-		<div id="picture">
-			<img src="source/ozgur.jpg" alt="Özgür Sevimli">
-		<!--	<img src="icon.jpg" alt="Özgür Sevimli"> -->
-			</div>
-
-	<p class="floatstop" >Iste quidem veteres inter ponetur honeste, qui vel mense brevi vel toto est iunior anno. Utor permisso, caudaeque pilos ut equinae paulatim vello unum, demo etiam unum, dum cadat elusus ratione ruentis acervi, qui redit in fastos et annis miraturque.</p>
-	<p class="floatstop">Ennius et sapines et fortis et alter Homerus, ut critici dicunt, leviter curare videtur, quo promissa cadant et somnia Pythagorea.Naevius in manibus non est et mentibus haeret paene recens? Adeo sanctum est vetus omne poema. Ambigitur quotiens, sit prior, Pacuvius docti.</p>
-	<p class="floatstop">Hos ediscit et hos arto stipata theatro spectat Roma potens; habet hos numeratque poetas ad nostrum tempus Livi scriptoris ab aevo, si nimis antique, si dure.</p>
-	<p>Interdum volgus rectum videt, est ubi peccat. Si veteres ita miratur laudatque poetas, ut nihil anteferat, nihil illis comparet, errat. Si quaedam nimis antique, si peraque dure dicere credit eos, ignave multa fatetur, et sapit et mecum facit et Iova iudicat 
-	aequo.Non equidem insector delendave carmina Livi esse reor, memini quae plagosum mihi parvo Orbilium dictare; sed emendata videri pulchraque et exactis minimum distantia miror.
-	Inter quae verbum emicuit si forte decorum, et si versus paulo concinnior unus et alter, venditque poema.</p><br>	
-		 
-		 
-		 <!-- Hier fängt 11. Lektion mit der Inhalt Positionierung von Elementenan. -->
-		 
-		 <h1> <b> Lektion 11: Positionierung von Elementen<b></h1>
-	<p>Mit der CSS-Positionierung können Sie ein Element exakt dort in Ihrem Dokument platzieren, wo Sie es wünschen. Zusammen mit float (siehe Lektion 13), 
-	ergeben sich viele Möglichkeiten ein präzises Layout zu erstellen.</p>
-	<p> Die folgenden Punkte werden in dieser Lektion behandelt:</p>
-	
-	<ul>
-		<li> Das Prinzip hinter der CSS-Positionierung </li>
-		<li> Absolute Positionierung </li>
-		<li> Relative Positionierung </li>	
-	</ul>			
-		<h3>Das Prinzip hinter der CSS-Positionierung</h3>
-		<p>Stellen Sie sich ein Browserfenster als Koordinatensystem vor:</p>
-		<img src="source/position.jpg" height="350px" width="600px";><br>
-		
-		<p>Das Prinzip hinter der CSS-Positionierung ist, dass jede Box irgendwo in diesem Koordinatensystem positioniert werden kann.</p>
-		<img src="source/position-code.jpg" height="200px" width="600px";><br>
-	
-	<h3>Absolute Positionierung	</h3>
-	<p> Ein Element, das absolut positioniert ist, nimmt keinem Platz im Dokument ein. D.h. es hinterläßt keinen leeren Platz, nachdem es positioniert wurde.
-	Um ein Element absolut zu positionieren, wird die Eigenschaft position auf den Wert absolute gesetzt. Nachfolgend können die Eigenschaften left, right, top
-	und bottom verwendet werden, um die Box zu platzieren. <br>
-	Als Beispiel für die absolute Positionierung nehmen wir vier Boxen, jede in einer Ecke des Dokumentes:</p>
-	
-	<img src="source/absolute-position.jpg" height="375px" width="600px";>
-	
-	<h3>Relative Positionierung	</h3>
-	<p> Um ein Element relativ zu positionieren, wird die Eigenschaft position auf den Wert relative gesetzt. Der Unterschied zwischen absoluter und relativer
-	Positionierung liegt in der Berechnung der Position.Die Position eines relativ positionierten Elementes wird von der eigentlichen Stelle im Dokument aus berechnet. 
-	D.h. man verschiebt das Element nur nach rechts, links, oben oder unten. Das Element nimmt nach der Positionierung trotzdem noch seinen ursprünglichen Platz im 
-	Dokument ein, obwohl es woanders dargestellt wird.Als Beispiel für die relative Positionierung, positionieren wir drei Bilder relativ zu ihren ursprünglichen 
-	Plätzen auf der Seite. Wenn Sie genau hinschauen, sehen Sie, dass die Bilder leere Stellen an den Originalstellen hinterlassen:</p>
-	
-	<img src="source/relative-position.jpg" height="375px" width="600px";>
-	
-	 <!-- Hier fängt 12. Lektion mit der Inhalt Ebene auf Ebene mit z-index (Layer). -->
-		 
-		 <h1> <b> Lektion 12: Ebene auf Ebene mit z-index (Layer)<b></h1>
-	<p>CSS arbeitet in drei Dimensionen – Breite, Höhe und Tiefe. Die ersten beiden haben wir in den vorhergehenden Lektionen behandelt. In dieser Lektion lernen wir, 
-	wie verschiedene Elemente zu Ebenen werden. Kurz gesagt, die Reihenfolge in der sich Elemente überlappen. Zu diesem Zweck, kann man jedem Element eine Nummer zuweisen
-	(z-index). Das System ist, dass ein Element mit einer höheren Nummer, ein Element mit einer niedrigeren Nummer überlappt.</p>
-	<p> Spielen wir eine Runde Poker und haben einen Royal Flush (10 bis Ass in der gleichen Farbe). Unsere Hand kann mit Hilfe von z-index wie folgt dargestellt werden:</p>
-
-		<img src="source/poker.jpg" height="350px" width="600px";><br>
-		
-		<p>In diesem Beispiel folgen die Zahlen aufeinander (1-5). Das gleiche Resultat würde aber entstehen, wenn die Zahlen weiter auseinander liegen würden. Wichtig ist nur 
-		die chronologische Ordnung der Zahlen.<br>
-		Der CSS-Code für das Kartenbeispiel könnte wie folgt aussehen:</p>
-		<img src="source/poker-code.jpg" height="550px" width="600px";><br>
-					
-		<div id="karo_zehn" >
-		<img src="source/karo-10.jpg" height="160px" width="80px";><br>
-		</div>
-		<div id="karo_bube" >
-		<img src="source/karo-bube.jpg" height="160px" width="80px";><br>
-		</div>
-		<div id="karo_dame" >
-		<img src="source/karo-dame.jpg" height="160px" width="80px";><br>
-		</div>
-		<div id="karo_koenig" >
-		<img src="source/karo-konig.jpg" height="160px" width="80px";><br>
-		</div>
-		<div id="karo_ass" >
-		<img src="source/karo-as.jpg" height="160px" width="80px";><br>
-		</div>
+		<br>
+		<div align="right" >		
+		<a href="basis-themen.html"> Weiter zu den Basis Themen.--> 	</a>		
+		</div> 
+		_______________________________________________________________________________________________________________________
  </body>
 </html>

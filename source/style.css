@@ -9,8 +9,37 @@ body {
 	  margin-bottom: 10px;
 	  margin-left: 200px;
 	}
+h1 { 
+		color: red;	
+		font-family: arial, verdana, sans-serif;
+		font-variant: normal;
+		font-size: 18px;
+		text-decoration: none;		 
+		padding: 0px 0px 20px 0px;	
+	}
 	
-	#hoch{ 
+h3 { 
+	   color: blue;		
+	   font-family: "Times New Roman", serif;
+	   font-size: 16px;
+	   text-transform: none;  
+	}
+p {
+		text-indent: 10px;
+		font: normal normal 14px arial, sans-serif;
+		letter-spacing: 0px;
+	}
+	
+#basis-themen{	
+		position:absolute;
+		top: 1700px;
+		left: 1000px;	
+		align:right;
+	}
+
+	
+	
+#hoch{ 
 		color: gray;	
 		font-family: "Times", Times, serif;
 		font-style:oblique;
@@ -22,23 +51,21 @@ body {
 	}
 
 	
-	table {
+table {
 		background: yellow;			
 		width = "400px";		
 		padding= "5";	
 		border:1px solid black;
 	}
 	/*  */
-	#repeat {
-	background: blue;
+#repeat {
+		background: blue;
 		border:1px solid black;	
 		width = "400px";	
-		padding= "5";	
-	
-	 
+		padding= "5";		 
 	}
 	
-	#attachment {
+#attachment {
 		width: 600px;
 		height: 100px
 		background: orange;
@@ -47,61 +74,17 @@ body {
 		letter-spacing: 0px;
 		border-width: thick;
 		border-style: dotted;
-		border-color: gold;	
-  
-	}
-	                 
-	h1 { 
-	   color: red;	
-	   font-family: arial, verdana, sans-serif;
-	   font-variant: normal;
-	   font-size: 18px;
-	   text-decoration:underline;		 
-	  padding: 0px 0px 20px 0px;
-	
-	}
-	
+		border-color: gold;	  
+	}     
 
 	
-	h3 { 
-	   color: blue;		
-	   font-family: "Times New Roman", serif;
-	   font-variant: lowercase;
-	   font-size: 16px;
-	   text-transform: none;
-	   background-color: yellow;
-	    background: orange;
-	  padding-left:120px;
-	  
-	    border-top-width: thick;
-	  border-top-style: solid;
-	  border-top-color: red;
-	  
-	  border-bottom-width: thick;
-	  border-bottom-style: solid;
-	  border-bottom-color: blue;
-	  
-	  border-right-width: thick;
-	  border-right-style: solid;
-	  border-right-color: green;
-	  
-	  border-left-width: thick;
-	  border-left-style: solid;
-	  border-left-color: orange;
-	}
 	
-	p {
-		text-indent: 30px;
-		font: normal normal 14px arial, sans-serif;
-		text-align: justify;
-		letter-spacing: 0px;
-		}
 	
 	th{
 	font-family: "Times New Roman", serif;
 	  font-weight: bold;
 	  text-align: center;
-	  background-color:green;
+	
 	}
 	
 	td{
@@ -160,10 +143,8 @@ body {
 	  color:white;
 	}
 	
-	ul {
-	  border-width: 10px;
-	  border-style: solid;
-	  border-color: orange;
+	ul {	 
+	  
 	}
 	
 	div.box {
