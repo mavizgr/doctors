@@ -4,38 +4,51 @@ body {
 	  background-repeat: no-repeat;
 	  background-attachment: scroll;
 	  
-	   margin-top: 50px;
-	  margin-right: 50px;
+	  margin-top: 10px;
+	  margin-right: 200px;
 	  margin-bottom: 10px;
-	  margin-left: 250px;
+	  margin-left: 200px;
 	}
+	
+	#hoch{ 
+		color: gray;	
+		font-family: "Times", Times, serif;
+		font-style:oblique;
+		font-variant: normal;
+		font-size: 40px;
+		text-decoration:none;
+		letter-spacing: 0px;	
+		padding: 0px 0px 20px 200px;		
+	}
+
 	
 	table {
-	background: yellow;
-		border = "5";		
+		background: yellow;			
 		width = "400px";		
 		padding= "5";	
+		border:1px solid black;
 	}
-	
+	/*  */
 	#repeat {
 	background: blue;
-		border = "5";		
-		width = "400px";		
+		border:1px solid black;	
+		width = "400px";	
 		padding= "5";	
-		  border-width: thick;
-	  border-style: dotted;
-	  border-color: gold;
+	
+	 
 	}
 	
 	#attachment {
+		width: 600px;
+		height: 100px
 		background: orange;
-		border = "5";		
-		width = "400px";		
+		border:1px solid black;			
 		padding= "5";
 		letter-spacing: 0px;
-  border-width: thick;
-	  border-style: dotted;
-	  border-color: gold;		
+		border-width: thick;
+		border-style: dotted;
+		border-color: gold;	
+  
 	}
 	                 
 	h1 { 
@@ -43,16 +56,12 @@ body {
 	   font-family: arial, verdana, sans-serif;
 	   font-variant: normal;
 	   font-size: 18px;
-	   text-decoration:underline;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		 background: yellow;
-	  padding: 20px 20px 20px 80px;
-	  
-	   border-width: thick;
-	  border-style: dotted;
-	  border-color: gold;
+	   text-decoration:underline;		 
+	  padding: 0px 0px 20px 0px;
+	
 	}
+	
+
 	
 	h3 { 
 	   color: blue;		
@@ -92,6 +101,7 @@ body {
 	font-family: "Times New Roman", serif;
 	  font-weight: bold;
 	  text-align: center;
+	  background-color:green;
 	}
 	
 	td{
@@ -174,4 +184,39 @@ body {
 		text-align: justify;
 		letter-spacing: 0px;
 	 /* <!-- clear:both; uygulanan float metodunu nötr hale getirmek icin kullanilir. Alabilecegi degerler, right,left,both,top,bottom.-->*/ 
+	}
+	
+	#karo_zehn {
+	  position: relative;
+	  left: 0px;
+	  top: 10px;
+	  z-index: 1;
+	}
+
+	#karo_bube {
+	  position: relative;
+	  left: 20px;
+	  top: -120px;
+	  z-index: 2;
+	}
+
+	#karo_dame {
+	  position: relative;
+	  left: 40px;
+	  top: -240px;
+	  z-index: 3;
+	}
+
+	#karo_koenig {
+	  position: relative;
+	  left: 60px;
+	  top: -360px;
+	  z-index: 4;
+	}
+
+	#karo_ass {
+	  position: relative;
+	  left: 80px;
+	  top: -480px;
+	  z-index: 5;
 	}
