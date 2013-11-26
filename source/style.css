@@ -5,11 +5,65 @@ body {
 	  background-attachment: scroll;
 	  
 	  margin-top: 10px;
-	  margin-right: 200px;
+	  margin-right: 20px;
 	  margin-bottom: 10px;
 	  margin-left: 200px;
 	}
 h1 { 
+		color: red;	
+		font-family: arial, verdana, sans-serif;
+		font-variant: normal;
+		font-size: 18px;
+		text-decoration: none;		 
+		padding: 0px 0px 20px 0px;	
+	}
+	
+ul.navitation{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		margin-bottom: 10px;
+}
+
+li.navigation{
+		float:left;
+		display:inline;
+}
+a.navigation 	{
+		font-family: arial, verdana, sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		color: white;
+		display:block;
+		width:200px;
+		height: 30px;
+		background-image: url("light-blue.png") ;
+		margin-bottom: 10px;
+}
+	a:link{	
+	 color: blue;
+	 text-decoration:none;
+	}
+	
+	a:visited{
+		color:purple;
+		text-decoration:none;
+	}
+	
+	a:active {
+	  background-color: #FFFF00;
+	  text-decoration:none;
+	}
+	a:hover{
+
+	  background-image: url("dark-blue.png") ;
+	  font-style: normal;
+	  text-decoration:none;
+	}
+
+
+h2 { 
 		color: red;	
 		font-family: arial, verdana, sans-serif;
 		font-variant: normal;
@@ -28,6 +82,7 @@ p {
 		text-indent: 10px;
 		font: normal normal 14px arial, sans-serif;
 		letter-spacing: 0px;
+
 	}
 	
 #basis-themen{	
@@ -36,11 +91,84 @@ p {
 		left: 1000px;	
 		align:right;
 	}
+.hintergrundfarbe {
+	background-color:green;
+}
+
+p.zeichenfamily{
+	font-family:"Times New Roman", serif;
+}
+
+p.zeichenstyle{
+	font-style:italic;
+}
+
+p.zeichenvariant{
+	font-variant: small-caps;
+}
+
+p.zeichengewichtung{
+	font-weight: bold;
+}
+
+p.zeichengroesse{
+	font-size: 20px;
+}
+
+p.zeichenkombi{
+	font: italic bold 30px arial, sans-serif;
+}
+
+p.texteinrücken{
+	text-indent: 50px;
+}
+p.textausrichtung{
+	text-align: center;
+}
+p.textdekoration{
+	text-decoration: line-through;
+}
+p.textlaufweite{
+	letter-spacing: 5px;
+}
+p.texttransformation{
+	text-transform: capitalize;
+}
+
+#textfarbe{
+	color: white;
+}
+/*  */
+#repeat {
+		background: yellow;					
+		padding= "5";
+		border-color: red;
+		border:5px dotted red;
+		width = "600px";
+		height: 100px		
+	}
 
 	
+#attachment {
+		background: green;
+		border:5px dashed yellow;	
+		padding= "5";
+		width: 600px;
+		height: 100px		  
+	}  
+
+#position{
+		background: red;					
+		padding= "5";
+		border-color: blue;
+		border-width:5px;
+		border-style: double;
+		width = "600px";
+		height: 100px
+}
 	
 #hoch{ 
-		color: gray;	
+		color: blue;	
 		font-family: "Times", Times, serif;
 		font-style:oblique;
 		font-variant: normal;
@@ -52,31 +180,11 @@ p {
 
 	
 table {
-		background: yellow;			
+		background: #B5D6FF;			
 		width = "400px";		
 		padding= "5";	
 		border:1px solid black;
 	}
-	/*  */
-#repeat {
-		background: blue;
-		border:1px solid black;	
-		width = "400px";	
-		padding= "5";		 
-	}
-	
-#attachment {
-		width: 600px;
-		height: 100px
-		background: orange;
-		border:1px solid black;			
-		padding= "5";
-		letter-spacing: 0px;
-		border-width: thick;
-		border-style: dotted;
-		border-color: gold;	  
-	}     
-
 	
 	
 	
@@ -113,25 +221,7 @@ table {
 	  text-decoration:none;
 	}
 	
-	a:link{
-	 color: blue;
-	 text-decoration:none;
-	}
-	
-	a:visited{
-		color:purple;
-		text-decoration:none;
-	}
-	
-	a:active {
-	  background-color: #FFFF00;
-	  text-decoration:none;
-	}
-	a:hover{
-	color: orange;
-	  font-style: italic;
-	  text-decoration:none;
-	}
+
 	
 	#spd {
 	  background:red;
@@ -141,10 +231,6 @@ table {
 	#cducsu {
 	  background:black;
 	  color:white;
-	}
-	
-	ul {	 
-	  
 	}
 	
 	div.box {

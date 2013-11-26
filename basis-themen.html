@@ -1,13 +1,21 @@
-<!doctype html>
-
-<html>
-   <head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
 	<meta charset="utf-8">
       <title>Das ist eine CSS-Tutorial für Doctors - Basis Themen</title>
 	  <link rel="stylesheet" type="text/css" href="source/style.css" />	
    </head>
 <body>
-    <h1> <b> Lektion-1: Farben und Hintergründe<b></h1>   
+	<h1 id="hoch"> CSS Tutorial </h1>	
+	<ul class="navigation">
+		<li class="navigation"> <a class="navigation" href="index.html"> Einleitung</a> </li>
+		<li class="navigation"> <a class="navigation"href="basis-themen.html">Basis Themen</a> </li>
+		<li class="navigation"> <a class="navigation"href="advanced-themen.html"> Advanced Themen</a></li>
+		<li class="navigation"> <a class="navigation"href="css3-themen.html">CSS3 Themen</a> </li>
+		<li class="navigation"> <a class="navigation"href="liste.html"> Code-Liste </a></li>			
+	</ul>
+    <h1> <b> Lektion 1: Farben und Hintergründe<b></h1>   
     <ul>       
         <li> color </li>
 		<li> background-color</li>
@@ -25,7 +33,11 @@
 	 dem "body"-Element zugewiesen werden. Sie können auch anderen Elementen, wie z.B. Überschriften <br>
 	 oder normalem Text, eine Hintergrundfarbe zuweisen. Im folgenden Beispiel sind dem "body"- und den <br>
 	 "h1"-Elementen verschiedene Hintergrundfarben zugewiesen. </p>
-	 <img src="source/background-color.jpg" height="175px" width="600px";	>	 
+	 <img src="source/background-color.jpg" height="175px" width="600px";	>	
+
+	<div id="textfarbe">	
+		<p class ="hintergrundfarbe" > Beispiel Paragraph: <br>
+		Dieses Paragraph hat eine Hintergrundfarbe grün und die Textfarbe weiß.</p> </div>
 	 
 	 <p> Die CSS-Eigenschaft background-image wird benutzt, um ein Hintergrundbild einzufügen.<br>
 		Hier wird die Hintergrund-image für ganzen Body Element hinzugefügt.</p>
@@ -68,7 +80,7 @@
 	Tabelle zeigt die zwei verschiedenen Möglichkeiten für die Eigenschaft background-attachment. Klicken Sie auf<br>
 	die Beispiele, um den Unterschied zwischen scrollbar und fixiert zu sehen.</p>
 	
-		 <table  id="attachment" cellspacing="10px">	
+<table  id="attachment" cellspacing="10px">	
 		<tr>
 			<th> Wert </th>
 			<th> Beschreibung</th>			
@@ -76,18 +88,17 @@
 		<tr>
 			<td> background-attachment: scroll</td>
 			<td> Das Bild scrollt mit der Seite - nicht fixiert </td>			
-		</tr>
-		
+		</tr>		
 		<tr>			
 			<td> background-attachment: fixed </td>
 			<td> Das Bild ist fixiert </td>			
 		</tr>		
 </table>
+
 	<p>Im nachfolgenden Code ist das Hintergrundbild fixiert.</p>
-	<img src="source/hintergrund-fix.jpg" height="175px" width = "600px";>
+	<img src="source/hintergrund-fix.jpg" height="175px" width = "600px";>	
 	
-	
-		<p> Standardmäßig wird das Hintergrundbild in der oberen linken Ecke das Bildschirmes festgesetzt. <br>
+	<p> Standardmäßig wird das Hintergrundbild in der oberen linken Ecke das Bildschirmes festgesetzt. <br>
 		Mit der Eigenschaft background-position können Sie dies ändern und das Bild frei nach Ihren Wünschen <br>
 		auf dem Bildschirm positionieren.Es gibt mehrere Wege, dem background-position Werte zuzuweisen.<br>
 		Aber alle haben die Gemeinsamkeit, dass sie als ein Paar Koordinaten angegeben sind. Der Wert <br>
@@ -96,7 +107,8 @@
 		(Pixel, Zentimeter usw.) oder mit den Worten top (oben), bottom (unten), center (zentriert), <br>
 		left (links) und right (rechts) angegeben werden. Die folgende Darstellung verdeutlicht das Prinzip:</p>
 
-<table  cellspacing="10px">	
+<div id="textfarbe">
+<table  id="position" cellspacing="10px">	
 		<tr>
 			<th> Wert </th>
 			<th> Beschreibung</th>			
@@ -104,31 +116,27 @@
 		<tr>
 			<td> background-position: 2cm 2cm</td>
 			<td> Das Bild befindet sich 2 cm vom linken und 2 cm vom oberen Rand der Seite entfernt </td>			
-		</tr>
-		
+		</tr>		
 		<tr>			
 			<td> background-position: 50% 25% </td>
 			<td> Das Bild ist zentriert und ein Viertel vom oberen Rand entfernt </td>			
-		</tr>		
-		
-			<tr>			
+		</tr>			
+		<tr>			
 			<td> background-position: top right </td>
 			<td> Das ist ist in der oberen rechten Ecke der Seite positioniert</td>			
 		</tr>	
 </table>
+</div>
 	<p>Das nachfolgende Codebeispiel positioniert das Hintergrundbild in der unteren rechten Ecke:</p>
-	<img src="source/hintergrund-position.jpg" height="175px" width = "600px";>
+	<img src="source/hintergrund-position.jpg" height="255px" width = "600px";>
 	
 	<p>Kombination der Hintergrundeigenschaften: die Eigenschaft ‘background’. Es könnte die obigen Eigenschaften <br> 
 	in einem Zeile kombiniert werden</p>
-	<img src="source/hintergrund-kombination.jpg" height="175px" width="600px";>
-	 
-	<!-- Hier fängt die zweite Lektion mit der Inhalt Zeichensätze(Fonts) -->  
-	
-	
+	<img src="source/hintergrund-kombination.jpg" height="125px" width="600px";>	 
+	<!-- Hier fängt die zweite Lektion mit der Inhalt Zeichensätze(Fonts) -->  	
 	 <h1> <b> Lektion 2: Zeichensätze (Fonts)<b></h1>
-   <p>In dieser Lektion werden Sie mehr darüber erfahren, wie Zeichensätze mit Hilfe von CSS eingebunden werden können. <br>
-   Wir werden auch zeigen, wie man dem Problem begegnen kann, dass eine bestimmte (besondere) Schriftart, welche Sie für <br>
+   <p>In dieser Lektion werden Sie mehr darüber erfahren, wie Zeichensätze mit Hilfe von CSS eingebunden werden können.
+   Wir werden auch zeigen, wie man dem Problem begegnen kann, dass eine bestimmte (besondere) Schriftart, welche Sie für 
    Ihre Webseite ausgesucht haben, nicht angezeigt wird, wenn auf dem betreffenden Rechner selbige Schriftart nicht installiert ist. </p>
    
     <ul>       
@@ -142,57 +150,58 @@
 	
 
 	<h3> <b> 1- Zeichensatzfamilie: die Eigenschaft ‘font-family’ <b></h3> 	
-	 <p> Die Eigenschaft font-family wird verwendet, um eine priorisierende Liste der Zeichensätze anzugeben, in der ein bestimmtes Element <br>
-	 oder eine Webseite angezeigt werden soll. Wenn der erste Zeichensatz nicht auf dem Computer, mit dem die Seite betrachtet wird, installiert ist, <br>
+	
+	 <p> Die Eigenschaft font-family wird verwendet, um eine priorisierende Liste der Zeichensätze anzugeben, in der ein bestimmtes Element 
+	 oder eine Webseite angezeigt werden soll. Wenn der erste Zeichensatz nicht auf dem Computer, mit dem die Seite betrachtet wird, installiert ist, 
 	 wird der nächstfolgende probiert, bis ein vorhandener bzw. passender Zeichensatz gefunden ist.
 <br>
-	Es gibt zwei Arten, wie man Zeichensätze kategorisieren kann: Schriftfamilien und generische (gattungsmäßige) Familien. Die beiden Ausdrücke <br>
+	Es gibt zwei Arten, wie man Zeichensätze kategorisieren kann: Schriftfamilien und generische (gattungsmäßige) Familien. Die beiden Ausdrücke 
 	werden nachfolgend erklärt.
 <br>
-Schriftfamilien: Beispiele für eine Schriftfamilie (oft auch nur “Schriftart” oder “font” genannt) sind z.B. “Arial”, “Times New Roman” oder “Tahoma”.
-<br>
-generische Familien: Generische (oder gattungsmäßige) Familien können wohl am besten als Gruppen von Schriftartfamilien beschrieben werden, die ein <br>
+<b>Schriftfamilien:</b> Beispiele für eine Schriftfamilie (oft auch nur “Schriftart” oder “font” genannt) sind z.B. “Arial”, “Times New Roman” oder “Tahoma”. <br>
+<b>generische Familien:</b> Generische (oder gattungsmäßige) Familien können wohl am besten als Gruppen von Schriftartfamilien beschrieben werden, die ein 
 ähnliches Aussehen haben. Als Beispiel sei hier “sans-serif” genannt, welches Schriftarten umfaßt, die keine “Füßchen” haben.</p>	
 
 <p> Ein Beispiel für solch eine priorisierende Liste der Zeichensätze könnte wie folgt aussehen: </p>
 	 <img src="source/font-family.jpg" height="175px" width="600px";>
+	 <p class="zeichenfamily"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit dem Zeichensatzfamillie "Times New Roman" geschrieben. </p>
 	 
 	<h3> <b> 2- Schriftstil: die Eigenschaft ‘font-style’ <b></h3>  
 	 
-	 <p> Die Eigenschaft font-style weißt dem betreffenden Element die Stile normal (kein Stil), italic (kursiv) oder oblique (schräg) zu.<br> 
+	 <p> Die Eigenschaft font-style weißt dem betreffenden Element die Stile normal (kein Stil), italic (kursiv) oder oblique (schräg) zu.
 	 Im folgenden Beispiel werden alle Überschriften, die mit "h2" markiert sind, kursiv geschrieben. </p>
 	 <img src="source/font-style.jpg" height="175px" width="600px";	>	 
-	 
+	  <p class="zeichenstyle"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit dem Schriftstil "italic" geschrieben. </p>
 	 <h3> <b> 3- Schriftvarianten: die Eigenschaft ‘font-variant‘ <b></h3>  
-	 <p> Mit der Eigenschaft font-variant kann man zwischen normal oder small-caps wählen. Bei small-caps benutzt die Schriftart anstatt der <br>
+	 <p> Mit der Eigenschaft font-variant kann man zwischen normal oder small-caps wählen. Bei small-caps benutzt die Schriftart anstatt der 
 	 Kleinbuchstaben (lower-case), kleiner geschriebene Großbuchstaben (upper-case). Verwirrt? Sehen Sie sich die Beispiele an:</p>
 	 <img src="source/font-variant.jpg" height="175px" width="600px";	>
-	 
+	   <p class="zeichenvariant"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit dem Schriftvariant "small-caps" geschrieben. </p>
 	 <h3> <b> 4- Schriftgewichtung: die Eigenschaft ‘font-weight’<b></h3>  
 	 <p> Mit der Eigenschaft font-weight gibt man an, wie fett oder “schwer” eine Schriftart angezeigt werden soll. Eine Schrift kann entweder<br>
 	 normal oder bold (fett) dargestellt werden. Einige Browser unterstützen auch die Angabe der Zahlen 100-900 (nur volle Hunderter) um eine feiner<br>
 	 abgestufte Darstellung zu erreichen.</p>
 	 <img src="source/font-weight.jpg" height="175px" width="600px";	>
+	  <p class="zeichengewichtung"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit der Schriftgewichtung "bold" geschrieben. </p>
 	 
 	 <h3> <b> 5- Schriftgröße: die Eigenschaft ‘font-size’<b></h3>  
 	 <p> Die Schriftgröße wird durch die Eigenschaft font-size festgelegt. <br>
 	 Man kann viele verschiedene Einheiten (z.B. Pixel und Prozentwerte) verwenden um die Größen zu beschreiben. In diesem Tutorial werden <br>
 	 wir uns auf die meistgebrauchten und zweckmäßigsten Einheiten konzentrieren. Beispiele sind:</p>
-	 <img src="source/font-size.jpg" height="175px" width="600px";	>
+	 <img src="source/font-size.jpg" height="355px" width="600px";	>
+	  <p class="zeichengroesse"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit der Schriftgröße "20px" geschrieben. </p>
 	 
 	 
 	 <h3> <b> 6- Kombinationder  Eigenschaft ‘font’<b></h3>  
 	 <p>Mit Hilfe der font-Eigenschaft können Sie alle Schrift-Eigenschaften in dieser einen Eigenschaft vereinen. Stellen Sie sich z.B. die folgenden<br>
 	 vier Codezeilen vor, die die Schrifteigenschaften für "p" angeben:</p>
 	 <img src="source/kombination-font.jpg" height="175px" width="600px";	>
-	 
-	
+	  <p class="zeichenkombi"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit allen Eigenschaften von Zeichensatz kombiniert folgenden "italic bold 30px arial, sans-serif" geschrieben. </p>
+	 	
 <!-- ab hier fängt dann Lektion 3: Text an..-->
-
  <h1> <b> Lektion 3: Text formatieren<b></h1>
    <p>Texte zu formatieren, ist eine der Hauptaufgaben für jeden Webdesigner. In dieser Lektion werden wir zeigen, welche unglaublichen Möglichkeiten <br>
-   CSS bietet,   um einen Text nach mehr aussehen zu lassen. Die folgenden Eigenschaften werden beschrieben: </p>
-   
+   CSS bietet,   um einen Text nach mehr aussehen zu lassen. Die folgenden Eigenschaften werden beschrieben: </p>   
     <ul>       
         <li> text-indent</li>
 		<li> text-align</li>
@@ -200,73 +209,65 @@ generische Familien: Generische (oder gattungsmäßige) Familien können wohl am
 		<li> text-spacing</li>
 		<li> text-transform</li>
      </ul>
-	
-
 	<h3> <b> 1- Texteinrückung: die Eigenschaft ‘text-indent’ <b></h3> 	
 	 <p> Die Eigenschaft text-indent erlaubt es Ihnen, Ihrem Text einen eleganten Touch zu geben, indem Sie die erste Zeile eines Absatzes einrücken.<br>
 	 Im folgenden Beispiel werden alle Absätze, die mit "p" markiert sind, um 30px eingerückt:</p>	
-	 <img src="source/text-indent.jpg" height="175px" width="600px";>
+	 <img src="source/text-indent.jpg" height="175px" width="600px";>	
+	 <p class="texteinrücken"> Beispiel Paragraph:<br> Dieser Paragraph wurde mit der Texteinrücken "50px" geschrieben. Der Paragraph wurde 50 px nach innen verschoben. </p>
 	 
-	<h3> <b> 2- Textausrichtung: die Eigenschaft ‘text-align’ <b></h3>  
-	 
+	<h3> <b> 2- Textausrichtung: die Eigenschaft ‘text-align’ <b></h3>  	 
 	 <p> Die CSS-Eigenschaft text-align ist mit dem Attribut align vergleichbar, welches in älteren HTML-Versionen verwendet wurde. Text kann entweder <br>
 	 left (links), right (rechts) oder center (zentriert) ausgerichtet werden. Außerdem steht der Wert justify für Blocksatz zur Verfügung, d.h. jede Zeile <br>
 	 wird so gestreckt, dass alle gleich lang sind. Dies kennen Sie vielleicht aus Zeitungen und Zeitschriften. Im unten stehenden Beispiel ist der Text in <br>
 	 Tabellenköpfen "th" (table header) rechts ausgerichtet, während er in normalen Tabellenzellen "td" zentriert wird. Zusätzlich werden normale Absätze im <br>
 	 Blocksatz geschrieben: </p>
-	 <img src="source/text-align.jpg" height="175px" width="600px";	>	 
+	 <img src="source/text-align.jpg" height="175px" width="600px";	>	
+ <p class="textausrichtung"> Beispiel Paragraph:<br> Dieser Paragraph wurde mit der Textausrichtung "text-align: center;" geschrieben.</p>	 
 	 
 	 <h3> <b> 3- Textdekoration: die Eigenschaft ‘text-decoration’ <b></h3>  
 	 <p> Mit der Eigenschaft text-decoration ist es möglich, Texte verschiedenartig zu “dekorieren” oder Ihnen “Effekte” zu verleihen. Sie können Texte  <br>
 	 unterstreichen, durchstreichen oder eine Linie darüber zeichnen lassen. Im folgenden Beispiel sind "h1"-Überschriften unterstrichen, "h2"-Überschriften <br>
 	 haben eine Linie über dem Text und "h3"-Überschriften sind durchgestrichen.</p>
 	 <img src="source/text-decoration.jpg" height="175px" width="600px";	>
+	  <p class="textdekoration"> Beispiel Paragraph:<br> Dieser Paragraph wurde mit der Textdekoration "text-decoration: line-through;" geschrieben.</p>
 	 
 	 <h3> <b> 4- Laufweite (Abstand zwischen den Buchstaben): die Eigenschaft ‘letter-spacing’<b></h3>  
 	 <p> Die Laufweite von Text kann mit der Eigenschaft letter-spacing verändert werden. Der Wert, den die Eigenschaft annimmt, ist einfach der gewünschte Abstand<br>
 	 der Buchstaben. Wenn Sie z.B. eine Laufweite von 3px für Ihre Textabsätze "p" und 6px für "h1"-Überschriften wünschen, kann der nachfolgende Code verwendet werden.</p>
 	 <img src="source/text-spacing.jpg" height="175px" width="600px";	>
+	   <p class="textlaufweite"> Beispiel Paragraph:<br> Dieser Paragraph wurde mit der Textlaufweite "letter-sapcing: 5px;" geschrieben.</p>
 	 
 	 <h3> <b> 5- Texttransformation: die Eigenschaft ‘text-transform’<b></h3>  
 	 <p> Mit der Eigenschaft text-transform kann man die Groß- und Kleinschreibung eines Textes kontrollieren. Sie können wählen zwischen capitalize, uppercase oder lowercase<br>
 	 wählen, egal wie der Ursprungstext im HTML-Code aussieht.</p>
 	 <img src="source/text-transform.jpg" height="175px" width="600px";	>
-	 
-	 
-	 <h3> <b> 6- Kombinationder  Eigenschaft ‘font’<b></h3>  
-	 <p>Mit Hilfe der font-Eigenschaft können Sie alle Schrift-Eigenschaften in dieser einen Eigenschaft vereinen. Stellen Sie sich z.B. die folgenden<br>
-	 vier Codezeilen vor, die die Schrifteigenschaften für "p" angeben:</p>
-	 <img src="source/kombination-font.jpg" height="175px" width="600px";	>
-	 
-	 <!-- bis hier her-->
-	 
-	 
-	 
+	   <p class="texttransformation"> Beispiel Paragraph:<br> Dieser Paragraph wurde mit der Texttransformation "text-transform: capitalize;" geschrieben.</p>
+	 <!-- bis hier her-->	 
 	<!-- Hier fängt 4. Lektion mit der Inhalt "Link" an.-->
 	
 	 <h1> <b> Lektion 4: Links<b></h1>
-   <p>Sie können Ihr Wissen aus den vorangegangenen Lektionen auch auf Links anwenden (Farben verändern, Schriftarten, Unterstreichungen usw.) <br>
-   Neu ist aber, dass CSS es Ihnen erlaubt, dies abhängig davon zu gestalten, ob der Link schon besucht (visited) oder noch nicht besucht (link) wurde,<br>
+   <p>Sie können Ihr Wissen aus den vorangegangenen Lektionen auch auf Links anwenden (Farben verändern, Schriftarten, Unterstreichungen usw.) 
+   Neu ist aber, dass CSS es Ihnen erlaubt, dies abhängig davon zu gestalten, ob der Link schon besucht (visited) oder noch nicht besucht (link) wurde,
    gerade angeklickt wird (active) oder nur der Mauszeiger über dem Link platziert ist (hover). Dadurch kann man seiner Webseite tolle und nützliche 
    Effekte hinzufügen. Um diese Effekte zu steuern, benutzt man sog. Pseudoklassen (pseudo-classes).</p>
    
   
 	<h3> <b> Was ist eine Pseudoklasse?<b></h3> 	
-	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen <br>
-	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a <br>
+	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen 
+	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a 
 	 zum ansprechen der Links im HTML-Dokument:</p>	
 		 
-	 <p> Ein Link kann verschiedene Zustände haben. Er kann z.B. besucht oder noch nicht besucht worden sein. Sie können die folgenden <br>
+	 <p> Ein Link kann verschiedene Zustände haben. Er kann z.B. besucht oder noch nicht besucht worden sein. Sie können die folgenden 
 	 Pseudoklassen verwenden, um dies darzustellen: </p>
 	 <img src="source/link_visited.jpg" height="175px" width="600px";	>	 
 	 
 	 
-	 <p> Die Pseudoklasse :active benutzt man für aktive Links, also solche, die gerade angeklickt werden.<br>
+	 <p> Die Pseudoklasse :active benutzt man für aktive Links, also solche, die gerade angeklickt werden.
 	 Das nachfolgende Beispiel gibt den aktiven Links eine gelbe Hintergrundfarbe:</p>
 	 <img src="source/link-active.jpg" height="175px" width="600px";	>
 	 
 	
-	 <p> Die Pseudoklasse :hover wird angewendet, wenn der Mauszeiger auf einem Link platziert wird.Das kann <br>
+	 <p> Die Pseudoklasse :hover wird angewendet, wenn der Mauszeiger auf einem Link platziert wird.Das kann 
 	 verwendet werden, um interessante Effekte zu kreieren. Wenn man beispielsweise möchte, dass seine Links orange<br>
 	 und kursiv geschrieben werden, wenn der Mauszeiger sie berührt, dann sollte das CSS so aussehen:</p>
 	<img src="source/link-hover.jpg" height="175px" width="600px";	>
@@ -281,21 +282,21 @@ generische Familien: Generische (oder gattungsmäßige) Familien können wohl am
 	<!-- Hier fängt 5. Lektion mit der Inhalt Identifikation und Gruppierung der Elemente an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet widr.-->
 	
 	<h1> <b> Lektion 5: Identifikation und Gruppierung von Elementen (class und id)<b></h1>
-   <p>Manchmal möchte man einen speziellen Stil nur einem bestimmten Element oder eine Gruppe von Elementen zuweisen.<br>
-   In dieser Lektion werden wir uns genauer anschauen, wie man class und id nutzen kann, um Eigenschaften für ausgewählte <br>
+   <p>Manchmal möchte man einen speziellen Stil nur einem bestimmten Element oder eine Gruppe von Elementen zuweisen.
+   In dieser Lektion werden wir uns genauer anschauen, wie man class und id nutzen kann, um Eigenschaften für ausgewählte 
    Elemente festzulegen.</p>
    
   
 	<h3> <b>1- Gruppieren von Elementen in Klassen (class)<b></h3> 	
-	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen <br>
-	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a <br>
+	 <p> Eine Pseudoklasse erlaubt es Ihnen zwischen verschiedenen Zuständen oder Ereignissen zu unterscheiden, wenn Sie eine Eigenschaft für einen 
+	 HTML-Tag festlegen. Sehen wir uns ein Beispiel an. Wie Sie wissen, werden Links in HTML mit "a"-Tags markiert. In CSS nutzen wir wiederum a
 	 zum ansprechen der Links im HTML-Dokument:</p>	
 		 
-	 <p> Nehmen wir an, wir haben zwei Listen mit Links zu verschiedenen Traubensorten, die zur Herstellung von Weiß- oder <br>
+	 <p> Nehmen wir an, wir haben zwei Listen mit Links zu verschiedenen Traubensorten, die zur Herstellung von Weiß- oder 
 	 Rotwein genommen werden. </p>
 	 
-	 <p> Wir wollen aber, dass die Weißweinlinks gelb und die Rotweinlinks rot werden und die restlichen Links auf der Seite blau bleiben. <br>
-	 Um dies zu erreichen, teilen wir die Links in zwei Kategorien. Dies wird gemacht, indem man jedem Link mit dem Attribut class eine Klasse <br>
+	 <p> Wir wollen aber, dass die Weißweinlinks gelb und die Rotweinlinks rot werden und die restlichen Links auf der Seite blau bleiben. 
+	 Um dies zu erreichen, teilen wir die Links in zwei Kategorien. Dies wird gemacht, indem man jedem Link mit dem Attribut class eine Klasse 
 	 zuschreibt. Lassen Sie uns für das obige Beispiel Klassen vergeben:</p>
 	 <img src="source/class.jpg" height="175px" width="600px";	>	
 	 
@@ -303,8 +304,8 @@ generische Familien: Generische (oder gattungsmäßige) Familien können wohl am
 	 <img src="source/class-beispiel.jpg" height="175px" width="600px";	>
 	 
 	 <h3> <b>2- Identifikation eines bestimmten Elementes (id)<b></h3> 
-	 <p> Zusätzlich zu der Gruppierung der Elemente ist es möglich einzelne Elemente anzusprechen. Dazu braucht man das Attribut id. <br>
-	 Das besondere an dem Attribut id ist, dass es kein weiteres Element im selben Dokument geben kann, welches die selbe id trägt. <br>
+	 <p> Zusätzlich zu der Gruppierung der Elemente ist es möglich einzelne Elemente anzusprechen. Dazu braucht man das Attribut id. 
+	 Das besondere an dem Attribut id ist, dass es kein weiteres Element im selben Dokument geben kann, welches die selbe id trägt. 
 	 Jede id muss einzigartig sein. In anderen Fällen nutzen Sie besser das Attribut class</p>
 	<img src="source/id-beispiel.jpg" height="175px" width="600px";	>
 	
@@ -314,29 +315,29 @@ generische Familien: Generische (oder gattungsmäßige) Familien können wohl am
 	<!-- Hier fängt 6. Lektion mit der Inhalt Gruppierung von Elementen (span und div) an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet wird.-->
 	
 	<h1> <b> Lektion 6: Gruppierung von Elementen (span und div)<b></h1>
-   <p>Die Elemente "span" und "div" werden zum gruppieren und strukturieren eines Dokumentes benutzt und sehr oft mit den Attributen <br>
-   class und id verwendet. In dieser Lektion werfen wir einen genaueren Blick auf die Benutzung von "span" und "div", da genau diese beiden <br>
+   <p>Die Elemente "span" und "div" werden zum gruppieren und strukturieren eines Dokumentes benutzt und sehr oft mit den Attributen 
+   class und id verwendet. In dieser Lektion werfen wir einen genaueren Blick auf die Benutzung von "span" und "div", da genau diese beiden 
    HTML-Elemente von zentraler Bedeutung für den Aufbau von Webseiten mit Hilfe von CSS ist.</p>
    
   
 	<h3> <b>1- Gruppieren mit "span" <b></h3> 	
-	 <p> Das Element "span" ist ein neutrales Element, welches dem Dokument eigentlich nichts hinzufügt. Aber zusammen mit CSS, kann "span"<br>
+	 <p> Das Element "span" ist ein neutrales Element, welches dem Dokument eigentlich nichts hinzufügt. Aber zusammen mit CSS, kann "span"
 	 dazu benutzt werden, um visuelle Besonderheiten an bestimmten Textstellen im Dokument einzufügen.</p>	
-	 <img src="source/span.jpg" height="175px" width="600px";	>	
+	 <img src="source/span.jpg" height="325px" width="600px";	>	
 	 
 	 <h3> <b>2- Gruppieren mit "div"<b></h3> 
-	 <p> Während "span", wie im vorhergehenden Beispiel gesehen, innerhalb eines Block-Level-Element gebraucht wird, wird "div" benutzt, <br>
-	 um eines oder mehrere Block-Level-Element zu gruppieren. Neben diesem Unterschied funktioniert das gruppieren mit "div" aber mehr oder<br>
-	 weniger in der gleichen Art und Weise. Schauen wir uns ein Beispiel mit den jeweils letzten drei Bundeskanzlern von SPD bzw. CDU/CSU, <br>
+	 <p> Während "span", wie im vorhergehenden Beispiel gesehen, innerhalb eines Block-Level-Element gebraucht wird, wird "div" benutzt, 
+	 um eines oder mehrere Block-Level-Element zu gruppieren. Neben diesem Unterschied funktioniert das gruppieren mit "div" aber mehr oder
+	 weniger in der gleichen Art und Weise. Schauen wir uns ein Beispiel mit den jeweils letzten drei Bundeskanzlern von SPD bzw. CDU/CSU, 
 	 aufgeteilt nach den Parteien, denen diese entstammen:</p>
-	<img src="source/div.jpg" height="450px" width="600px";	> <br>
+	<img src="source/div.jpg" height="600px" width="600px";	> <br>
      <a href="div-beispiel.html">Beispiel Link</a>
 	 
 	 
 	<!-- Hier fängt 7. Lektion mit der Inhalt  Box-Modell an. -->	
 	<h1> <b> Lektion 7: Das Box-Modell<b></h1>
-   <p>Das Box-Modell in CSS beschreibt die Boxen (oder Kästen), die für HTML-Elemente generiert werden. Das Box-Modell enthält auch <br>
-   Optionen zum einstellen von Außenabständen (margin), Rändern (border), Innenabständen (padding) und Inhalten (content) für jedes Element.<br>
+   <p>Das Box-Modell in CSS beschreibt die Boxen (oder Kästen), die für HTML-Elemente generiert werden. Das Box-Modell enthält auch 
+   Optionen zum einstellen von Außenabständen (margin), Rändern (border), Innenabständen (padding) und Inhalten (content) für jedes Element.
    Die folgende Grafik zeigt, wie das Box-Modell konstruiert ist:</p>
    <img src="source/box-modell.jpg" height="300px" width="400px";	>	 
 
@@ -354,7 +355,7 @@ generische Familien: Generische (oder gattungsmäßige) Familien können wohl am
 		<h3> Bereite der Umrandung:"border-width" </h3>
 		<p> Die Breite der Umrandung wird mit der Eigenschaft border-width eingestellt. Diese kann die Werte thin (dünn), medium (mittel) 
 		und thick (dick) oder einen numerischen Wert in Pixeln annehmen. </p>
-		
+	
 		<h3> Farbe der Umrandung: "border-color" </h3>
 		<p> Die Eigenschaft border-color gibt an, welche Farbe die Umrandung hat. Werte können die normalen Farbwerte, z.B. “#123456”, 
 		“rgb(123,123,123)” oder “yellow” sein. </p>
