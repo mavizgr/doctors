@@ -15,13 +15,36 @@
 		<li class="navigation"> <a class="navigation"href="css3-themen.html">CSS3 Themen</a> </li>
 		<li class="navigation"> <a class="navigation"href="liste.html"> Code-Liste </a></li>			
 	</ul>
-    <h1> <b> Lektion 1: Grouping Selectors<b></h1>   
+	
+		<br>	
+	<br>	
+	
+	<!-- <li> Grouping/Nesting</li>
+			<li> Dimension</li>
+			<li> Display</li>
+			<li> Positioning</li>
+			<li> Navigation Bar</li>
+			<li> Image Gallery</li>
+			<li> Image Opacity</li>
+			<li> Attr Selectors</li> -->
+			
+	<ul class="lektion"	>
+			<li> <a class="lektion" href="#lektion1">Lektion 1: Grouping/Nesting</a></li>
+			<li> <a class="lektion" href="#lektion2">Lektion 2: Dimension</a></li>
+			<li> <a class="lektion"href="#lektion3">Lektion 3: Display</a></li>
+			<li> <a class="lektion"href="#lektion4">Lektion 4: Positioning</a></li>	
+			<li> <a class="lektion"href="#lektion5">Lektion 5: Navigation Bar</a></li>
+			<li> <a class="lektion"href="#lektion6">Lektion 6: Image Gallery</a></li>
+			<li> <a class="lektion"href="#lektion7">Lektion 7: Image Opacity</a></li>
+			<li> <a class="lektion"href="#lektion8">Lektion 8: Attr Selectors</a> </li>	
+		</ul>
+    <h1 id="lektion1"> <b> Lektion 1: Grouping Selectors<b></h1>   
  
 	 <p> In CSS Dokumente haben viele Elemente gleiche Gestaltung. Man kann die die Code der gleich gestalteten Elemente gruppieren, um die Code Länge zu sparen,  </p>	 
 	 <img src="source/samestyle.jpg" height="175px" width="600px";>	 
 	 <img src="source/grouping.jpg" height="125px" width="600px";	>	
 
-	<h1> <b> Lektion 2: CSS Dimension<b></h1>  
+	<h1 id="lektion2"> <b> Lektion 2: CSS Dimension<b></h1>  
 	 <p> Mit der Eigenschaft CSS Dimension kann die Höhe(height) und die Breite(width) der Elementen gestalltet/kontrolliert  werden. </p>
 	<img src="source/dimension.jpg" height="425px" width="600px";	>	 
 	 <p class="ex">Dieser Paragraph hat die Höhe 50px und Breite 100px.</p>	 <br>
@@ -34,9 +57,29 @@
 	 is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of this paragraph is set to 50px. The maximum height of 
 	 this paragraph is set to 50px. The maximum height of this paragraph is set to 50px.</p>	 
 
-
 	 
-	  <h1> <b> Lektion 4: Positioning<b></h1>  
+	 <h1 id="lektion3"> <b> Lektion 3: Display and Visibility<b></h1>  
+	 <p> The display property specifies if/how an element is displayed, and the visibility property specifies if an element should be visible or hidden. </p>
+	 <p> Hiding an element can be done by setting the display property to "none" or the visibility property to "hidden". However, notice that these two methods
+	 produce different results: <br>
+	 visibility:hidden hides an element, but it will still take up the same space as before. The element will be hidden, but still affect the layout.</p>	 <br>
+	 <p> Beispiel-Code: h1.hidden {visibility:hidden;}, h1.hidden {display:none;}</p>	
+	 <h1>This is a visible heading</h1>
+	 <h1 class="hidden">This is a hidden heading</h1>
+	 <p>Notice that the hidden heading does not take up space.</p>
+	 <h2> CSS Display - Block and Inline Elements</h2>
+	 <p> A block element is an element that takes up the full width available, and has a line break before and after it. <br>Examples of block elements:</p>
+		<ul>
+			<li> "h1" </li>
+			<li> "p"  </li>
+			<li> "div" </li>
+		</ul>
+	<p>An inline element only takes up as much width as necessary, and does not force line breaks. <br>Examples of inline elements:
+		<ul>
+			<li> "span" </li>
+			<li> "a"  </li>
+		</ul></p>	 
+	  <h1 id="lektion4"> <b> Lektion 4: Positioning<b></h1>  
 	 <p> The CSS positioning properties allow you to position an element. It can also place an element behind another, and specify what should happen 
 	 when an element's content is too big.Elements can be positioned using the top, bottom, left, and right properties. However, these properties will 
 	 not work unless the position property is set first. They also work differently depending on the positioning method. There are four different positioning methods.</p>
@@ -56,17 +99,117 @@
 	<p>An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is "html":</p>
 	<img src="source/absolute-positioning.jpg" height="125px" width="600px";	>	 
 
-	<h1> <b> Lektion 5: Navigation Bars<b></h1>  
+	<h1 id="lektion5"> <b> Lektion 5: Navigation Bars<b></h1>  
 	<p> Having easy-to-use navigation is important for any web site. With CSS you can transform boring HTML menus into good-looking navigation bars.</p>
 	<h2>5.1 Horizontal Navigation Bar</h2>
 	<p>There are two ways to create a horizontal navigation bar. Using inline or floating list items. Both methods work fine, but if you want the links to be the same size, you have to use the floating method.</p>
-   <br>
-		<div align="left" >		
+	<h3> 5.1.1 Inline List Items</h2>
+	<p> One way to build a horizontal navigation bar is to specify the "li" elements as inline, in addition to the "standard" code above:</p>
+	<p> Beispiel-Code: li{display:inline;}</p>	
+	<h3> 5.1.2 Floating List Items</h2>
+	<p> In the example above the links have different widths. For all the links to have an equal width, float the "li" elements and specify a width for the "a" elements:</p>
+	<p> Beispiel-Code:li{float:left;}, a{display:block;width:60px;}</p>	
+	<p><span class="achtung">Hinweise:</span>Als Beispiel könnt ihr den Navigationbar von diesem Seite anschauen.</p>	
+	
+	<h1 id="lektion6"> <b> Lektion 6: Image Gallery<b></h1>  
+	<p> The following image gallery is created with CSS:</p>
+	<div class="img">
+		<a target="_blank" href="klematis_big.htm">
+		<img src="source/klematis_small.jpg" alt="Klematis" width="110" height="90">
+		</a>
+	<div class="desc">Add a description of the image here</div>
+	</div>
+	<div class="img">
+		<a target="_blank" href="klematis2_big.htm">
+		<img src="source/klematis2_small.jpg" alt="Klematis" width="110" height="90">
+		</a>
+		<div class="desc">Add a description of the image here</div>
+	</div>
+	<div class="img">
+		<a target="_blank" href="klematis3_big.htm">
+		<img src="source/klematis3_small.jpg" alt="Klematis" width="110" height="90">
+			</a>
+	<div class="desc">Add a description of the image here</div>	
+	</div>
+	<div class="img">
+  <a target="_blank" href="klematis4_big.htm">
+  <img src="source/klematis4_small.jpg" alt="Klematis" width="110" height="90">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<br>
+
+	<div class="floatstop" align="left" >
+	<h1 id="lektion7"> <b> Lektion 7: Image Opacity / Transparency<b></h1>  
+	<p> Creating transparent images with CSS is easy. <br> The CSS opacity property is a part of the W3C CSS3 recommendation.</p>
+	<h2>Example 1 - Creating a Transparent Image</h2>
+	<p>The CSS3 property for transparency is opacity. First we will show you how to create a transparent image with CSS. <br> <br> Regular image: </p>
+		
+	<img src="source/klematis2_small.jpg" alt="Klematis" width="110" height="90">	
+	<p>The same image with transparency: <br> </p>
+	<img class="trans"src="source/klematis_trans.jpg" alt="Klematis" width="110" height="90">
+	
+	<h2>Example 2 - Image Transparency - Hover Effect</h2>
+	<p>Mouse over the images: </p>		
+	<img class="trans" src="source/klematis2_small.jpg" alt="Klematis" width="110" height="90">	
+	<img class="trans" src="source/klematis_small.jpg" alt="Klematis" width="110" height="90">
+	<p> The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hover over one of the images. 
+	In this case we want the image to NOT be transparent when the user hover over it. The CSS for this is: opacity=1. IE8 and earlier: filter:alpha(opacity=100).<br>
+	When the mouse pointer moves away from the image, the image will be transparent again.</p>
+
+	<h2>Example 3 - Text in Transparent Box</h2>
+	<div class="background">
+	<div class="transbox">
+	<p>This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	</p>
+	</div>
+	</div>
+	
+	
+	<div class="floatstop" align="left" >
+	<h1 id="lektion8"> <b> Lektion 8: Attribute Selector<b></h1>  
+	<p> The example below styles all elements with a title attribute:</p>
+	<img src="source/attribute-selector.jpg"  width="600px" height="125px">
+	<p achtung="Example Text with attribute [title].">Example Text with attribute [title].</p>	
+	
+	<h2>Attribute and Value Selector</h2>
+	<p>The example below styles all elements with title="W3Schools": </p>	
+	<img src="source/attribute-value.jpg" width="600px" height="125px">	
+	<p frame="frame">This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	This is some text that is placed in the transparent box.
+	</p>
+	<img frame ="frame"class="trans"src="source/klematis_trans.jpg" alt="Klematis" width="110" height="90">	
+		
+	<h2>Attribute and Value Selector - Multiple Values</h2>
+	<p>The example below styles all elements with a title attribute that contains a specified value. This works even if the attribute has space separated values: </p>		
+	<img src="source/attribute-value-multip.jpg"  width="600px" height="90px">	
+
+	<h2>Will apply to:</h2>
+		<p lang="en">Hello!</p>
+		<p lang="en-us">Hi!</p>
+		<p lang="en-gb">Ello!</p>
+	<hr>
+		<h2>Will not apply to:</h2>
+		<p lang="us">Hi!</p>
+		<p lang="no">Hei!</p> <br>		
+	<p> Html code are below:</p>
+	<img src="source/attribute-selector-code.jpg"  width="600px" height="175px">	
+
+	
+ <br>
+		<div class="floatstop" align="left" >		
 		<a href="basis-themen.html"> <-- Zurück zu Basis Themen</a>		
 		</div> 
 		<div align="right" >		
 		<a href="css3-themen.html"> Weiter zu den CSS3 Themen--> 	</a>		
 		</div> 
-		_______________________________________________________________________________________________________________________
+		<hr>
 </body>
 </html>

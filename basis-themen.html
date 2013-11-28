@@ -15,7 +15,23 @@
 		<li class="navigation"> <a class="navigation"href="css3-themen.html">CSS3 Themen</a> </li>
 		<li class="navigation"> <a class="navigation"href="liste.html"> Code-Liste </a></li>			
 	</ul>
-    <h1> <b> Lektion 1: Farben und Hintergründe<b></h1>   
+	<br>	
+	<br>	
+		<ul class="lektion"	>
+			<li> <a class="lektion" href="#lektion1">Lektion 1: Farben und Hintergründe</a></li>
+			<li> <a class="lektion" href="#lektion2">Lektion 2: Zeichensätze (Fonts)</a></li>
+			<li> <a class="lektion"href="#lektion3">Lektion 3: Text formatieren</a></li>
+			<li> <a class="lektion"href="#lektion4">Lektion 4: Links</a></li>	
+			<li> <a class="lektion"href="#lektion5">Lektion 5: Identifikation und Gruppierung von Elementen (class und id)</a></li>
+			<li> <a class="lektion"href="#lektion6">Lektion 6: Gruppierung von Elementen (span und div</a>)</li>
+			<li> <a class="lektion"href="#lektion7">Lektion 7: Das Box-Modell</a></li>
+			<li> <a class="lektion"href="#lektion8">Lektion 8: Umrandung (border</a>)</li>	
+			<li> <a class="lektion"href="#lektion9">Lektion 9: Breite und Höhee</a></li>	
+			<li> <a class="lektion"href="#lektion10">Lektion 10: Schwimmende Positionierung von Elementen (float)</a> </li>	
+			<li> <a class="lektion"href="#lektion11">Lektion 11: Positionierung von Elementen</a></li>	
+			<li> <a class="lektion"href="#lektion12">Lektion 12: Ebene auf Ebene mit z-index(Layer)</a></li>	
+		</ul>
+    <h1 id="lektion1"> <b> Lektion 1: Farben und Hintergründe<b></h1>   
     <ul>       
         <li> color </li>
 		<li> background-color</li>
@@ -134,7 +150,7 @@
 	in einem Zeile kombiniert werden</p>
 	<img src="source/hintergrund-kombination.jpg" height="125px" width="600px";>	 
 	<!-- Hier fängt die zweite Lektion mit der Inhalt Zeichensätze(Fonts) -->  	
-	 <h1> <b> Lektion 2: Zeichensätze (Fonts)<b></h1>
+	 <h1 id="lektion2"> <b> Lektion 2: Zeichensätze (Fonts)<b></h1>
    <p>In dieser Lektion werden Sie mehr darüber erfahren, wie Zeichensätze mit Hilfe von CSS eingebunden werden können.
    Wir werden auch zeigen, wie man dem Problem begegnen kann, dass eine bestimmte (besondere) Schriftart, welche Sie für 
    Ihre Webseite ausgesucht haben, nicht angezeigt wird, wenn auf dem betreffenden Rechner selbige Schriftart nicht installiert ist. </p>
@@ -199,7 +215,7 @@
 	  <p class="zeichenkombi"> Beispiel Paragraph:<br> Dieses Paragraph wurde mit allen Eigenschaften von Zeichensatz kombiniert folgenden "italic bold 30px arial, sans-serif" geschrieben. </p>
 	 	
 <!-- ab hier fängt dann Lektion 3: Text an..-->
- <h1> <b> Lektion 3: Text formatieren<b></h1>
+ <h1 id="lektion3"> <b> Lektion 3: Text formatieren<b></h1>
    <p>Texte zu formatieren, ist eine der Hauptaufgaben für jeden Webdesigner. In dieser Lektion werden wir zeigen, welche unglaublichen Möglichkeiten <br>
    CSS bietet,   um einen Text nach mehr aussehen zu lassen. Die folgenden Eigenschaften werden beschrieben: </p>   
     <ul>       
@@ -245,7 +261,7 @@
 	 <!-- bis hier her-->	 
 	<!-- Hier fängt 4. Lektion mit der Inhalt "Link" an.-->
 	
-	 <h1> <b> Lektion 4: Links<b></h1>
+	 <h1 id="lektion4"> <b> Lektion 4: Links<b></h1>
    <p>Sie können Ihr Wissen aus den vorangegangenen Lektionen auch auf Links anwenden (Farben verändern, Schriftarten, Unterstreichungen usw.) 
    Neu ist aber, dass CSS es Ihnen erlaubt, dies abhängig davon zu gestalten, ob der Link schon besucht (visited) oder noch nicht besucht (link) wurde,
    gerade angeklickt wird (active) oder nur der Mauszeiger über dem Link platziert ist (hover). Dadurch kann man seiner Webseite tolle und nützliche 
@@ -272,16 +288,16 @@
 	 und kursiv geschrieben werden, wenn der Mauszeiger sie berührt, dann sollte das CSS so aussehen:</p>
 	<img src="source/link-hover.jpg" height="175px" width="600px";	>
 	<p> Links Beispiele:</p>
-	 <p> Das ist ein Beispiel-Link für den Code "link", das für nicht besuchten Seite zuständig ist. <a href="https://www.google.de/" id="unbesucht">Dies ist ein unbesuchter Link führt zu Google.</a></p>
-	 <p> Das ist ein Beispiel-Link für den Code "link-visited", das für schon besuchten Seite zuständig ist. <a href="https://www.google.de/" id="besucht">Dies ist ein besuchter Link.</a></p>
-	 <p> Das ist ein Beispiel-Link für den Code "link-active", Wenn man Link mit Maus gedrückt halten, dann wird dieses Link aktiviert. <a href="https://www.google.de/">Drücken und Halten.</a></p>
-	 <p> Das ist ein Beispiel-Link für den Code "link-hover", das eine Animation rausgibt, wenn man  Mauszeiger auf dem Link haltet. <a href="https://www.google.de">Mauszeiger auf dem Link bringen.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link", das für nicht besuchten Seite zuständig ist. <a href="https://www.google.de/" target="_blank" id="unbesucht">Dies ist ein unbesuchter Link führt zu Google.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link-visited", das für schon besuchten Seite zuständig ist. <a href="https://www.google.de/" target="_blank" id="besucht">Dies ist ein besuchter Link.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link-active", Wenn man Link mit Maus gedrückt halten, dann wird dieses Link aktiviert. <a href="https://www.google.de/" target="_blank">Drücken und Halten.</a></p>
+	 <p> Das ist ein Beispiel-Link für den Code "link-hover", das eine Animation rausgibt, wenn man  Mauszeiger auf dem Link haltet. <a href="https://www.google.de" target="_blank">Mauszeiger auf dem Link bringen.</a></p>
        
 	
 	
 	<!-- Hier fängt 5. Lektion mit der Inhalt Identifikation und Gruppierung der Elemente an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet widr.-->
 	
-	<h1> <b> Lektion 5: Identifikation und Gruppierung von Elementen (class und id)<b></h1>
+	<h1 id="lektion5"> <b> Lektion 5: Identifikation und Gruppierung von Elementen (class und id)<b></h1>
    <p>Manchmal möchte man einen speziellen Stil nur einem bestimmten Element oder eine Gruppe von Elementen zuweisen.
    In dieser Lektion werden wir uns genauer anschauen, wie man class und id nutzen kann, um Eigenschaften für ausgewählte 
    Elemente festzulegen.</p>
@@ -314,7 +330,7 @@
 	
 	<!-- Hier fängt 6. Lektion mit der Inhalt Gruppierung von Elementen (span und div) an. Diese Eigensachft ist empfehlenswert, da man es vielmal verwendet wird.-->
 	
-	<h1> <b> Lektion 6: Gruppierung von Elementen (span und div)<b></h1>
+	<h1 id="lektion6"> <b> Lektion 6: Gruppierung von Elementen (span und div)<b></h1>
    <p>Die Elemente "span" und "div" werden zum gruppieren und strukturieren eines Dokumentes benutzt und sehr oft mit den Attributen 
    class und id verwendet. In dieser Lektion werfen wir einen genaueren Blick auf die Benutzung von "span" und "div", da genau diese beiden 
    HTML-Elemente von zentraler Bedeutung für den Aufbau von Webseiten mit Hilfe von CSS ist.</p>
@@ -335,7 +351,7 @@
 	 
 	 
 	<!-- Hier fängt 7. Lektion mit der Inhalt  Box-Modell an. -->	
-	<h1> <b> Lektion 7: Das Box-Modell<b></h1>
+	<h1 id="lektion7"> <b> Lektion 7: Das Box-Modell<b></h1>
    <p>Das Box-Modell in CSS beschreibt die Boxen (oder Kästen), die für HTML-Elemente generiert werden. Das Box-Modell enthält auch 
    Optionen zum einstellen von Außenabständen (margin), Rändern (border), Innenabständen (padding) und Inhalten (content) für jedes Element.
    Die folgende Grafik zeigt, wie das Box-Modell konstruiert ist:</p>
@@ -343,7 +359,7 @@
 
 	<!-- Hier fängt 8. Lektion mit der Inhalt Umrandung (border) an. -->	
 	
-	<h1> <b> Lektion 8: Umrandung (border)<b></h1>
+	<h1 id="lektion8"> <b> Lektion 8: Umrandung (border)<b></h1>
 	<p>Umrandungen (border) können für viele Sachen verwendet werden, z.B. als Dekorationselement oder um die Eigenständigkeit zweier Sachen 
      zu unterstreichen. CSS bietet unendliche Möglichkeiten, bei der Verwendung von Umrandungen.</p>
 		<ul>
@@ -377,7 +393,7 @@
 		 
 		 <!-- Hier fängt 9. Lektion mit der Inhalt Breite und Höhe an. -->
 		 
-		 <h1> <b> Lektion 9: Breite und Höhe<b></h1>
+		 <h1 id="lektion9"> <b> Lektion 9: Breite und Höhe<b></h1>
 	<p>Bisher haben wir uns noch nicht viel um die Größe der Elemente, mit denen wir gearbeitet haben, gekümmert. In dieser Lektion werden wir sehen, 
 	wie einfach man Breite (width) und Höhe (height) eines Elementes einstellen kann.</p>
 		<ul>
@@ -399,7 +415,7 @@
 		
 		 <!-- Hier fängt 10. Lektion mit der Inhalt Schwimmende Positionierung von Elementen (float) an. -->
 		 
-		 <h1> <b> Lektion 10: Schwimmende Positionierung von Elementen (float)<b></h1>
+		 <h1 id="lektion10"> <b> Lektion 10: Schwimmende Positionierung von Elementen (float)<b></h1>
 	<p>Ein Element kann mit Hilfe der Eigenschaft float auf der linken oder rechten Seite eines Dokumentes (oder der beinhaltenden Box – siehe Lektion 
 	9 für eine Beschreibung des Box-Modells) positioniert werden. Nachfolgende Inhalte umfließen dieses Element. Die Nachfolgende Abbildung zeigt das 
 	Prinzip:</p>
@@ -428,7 +444,7 @@
 		 
 		 <!-- Hier fängt 11. Lektion mit der Inhalt Positionierung von Elementenan. -->
 		 
-		 <h1> <b> Lektion 11: Positionierung von Elementen<b></h1>
+		 <h1 id="lektion11"> <b> Lektion 11: Positionierung von Elementen<b></h1>
 	<p>Mit der CSS-Positionierung können Sie ein Element exakt dort in Ihrem Dokument platzieren, wo Sie es wünschen. Zusammen mit float (siehe Lektion 13), 
 	ergeben sich viele Möglichkeiten ein präzises Layout zu erstellen.</p>
 	<p> Die folgenden Punkte werden in dieser Lektion behandelt:</p>
@@ -464,7 +480,7 @@
 	
 	 <!-- Hier fängt 12. Lektion mit der Inhalt Ebene auf Ebene mit z-index (Layer). -->
 		 
-		 <h1> <b> Lektion 12: Ebene auf Ebene mit z-index (Layer)<b></h1>
+		 <h1 id="lektion12"> <b> Lektion 12: Ebene auf Ebene mit z-index (Layer)<b></h1>
 	<p>CSS arbeitet in drei Dimensionen – Breite, Höhe und Tiefe. Die ersten beiden haben wir in den vorhergehenden Lektionen behandelt. In dieser Lektion lernen wir, 
 	wie verschiedene Elemente zu Ebenen werden. Kurz gesagt, die Reihenfolge in der sich Elemente überlappen. Zu diesem Zweck, kann man jedem Element eine Nummer zuweisen
 	(z-index). Das System ist, dass ein Element mit einer höheren Nummer, ein Element mit einer niedrigeren Nummer überlappt.</p>
@@ -483,6 +499,6 @@
 		<div align="right" >		
 		<a href="advanced-themen.html"> Weiter zu den Advanced Themen.--> 	</a>		
 		</div> 
-		_______________________________________________________________________________________________________________________
+		<hr>
 </body>
 </html>

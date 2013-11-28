@@ -14,9 +14,296 @@
 		<li class="navigation"> <a class="navigation"href="css3-themen.html">CSS3 Themen</a> </li>
 		<li class="navigation"> <a class="navigation"href="liste.html"> Code-Liste </a></li>			
 	</ul>
+	<br>	
+	<br>	
+		<ul class="lektion"	>
+			<li> <a class="lektion" href="#lektion1">Lektion 1: Borders</a></li>
+			<li> <a class="lektion" href="#lektion2">Lektion 2: Backgrounds</a></li>
+			<li> <a class="lektion"href="#lektion3">Lektion 3: Text Effects</a></li>	
+			<li> <a class="lektion"href="#lektion4">Lektion 4: 2D Transforms</a></li>
+			<li> <a class="lektion"href="#lektion5">Lektion 5: 3D Transforms</a></li>
+			<li> <a class="lektion"href="#lektion6">Lektion 6: Transitions</a></li>	
+			<li> <a class="lektion"href="#lektion7">Lektion 7: Animations</a></li>	
+			<li> <a class="lektion"href="#lektion8">Lektion 8: Multiple Column</a> </li>	
+			<li> <a class="lektion"href="#lektion9">Lektion 9: User Interface</a></li>	
+		</ul>
 	<br>
+	<h1 id="lektion1"> <b> Lektion 1: Borders<b></h1>   
+ 
+	 <p> With CSS3, you can create rounded borders, add shadow to boxes, and use an image as a border - without using a design program, like Photoshop.<br>
+	 In this chapter you will learn about the following border properties: </p>	 
+	 <ul>
+	 	 <li> border-radius </li>
+		 	 <li> box-shadow </li>
+			 	 <li> border-image </li>
+				 </ul>
+	<h2> CSS3 Rounded Corners </h2>
+	<p> Adding rounded corners in CSS2 was tricky. We had to use different images for each corner. In CSS3, creating rounded corners is easy.In CSS3, the border-radius property is used to create rounded corners:</p>
+	 <img src="source/border-radius.jpg" height="175px" width="600px";>	 
+	 <div class="radius">This text is an example for rounded corners with the attribute border:radius=25px;.</div>
+	 
+	 <h2> CSS3 Box Shadow </h2>
+	<p> In CSS3, the box-shadow property is used to add shadow to boxes:</p>
+	 <img src="source/box-shadow.jpg" height="175px" width="600px";>	 
+	 <div class="shadow">This text is an example for box-shadow with the attribute box-shadow:radius= 10px 10px 5px #888888;.</div>
+	 
+	 <h2> CSS3 Border Image</h2>
+	<p>With the CSS3 border-image property you can use an image to create a border:</p>
+	 <img src="source/border-image.jpg" height="175px" width="600px";>	 
+	<p>The border-image property specifies an image to be used as a border.</p>
+
+	<div class="border"id="round">Here, the image is tiled (repeated) to fill the area.</div>
 	<br>
-	<a href="Bewerbungsunterlagen_OA.pdf" > Zum Download Bewerbungsunterlagen. </a>
+	<div class="border"id="stretch">Here, the image is stretched to fill the area.</div>
+
+	<p>Here is the image used:</p>
+	<img src="source/border.png">
+
+	<h1 id="lektion2"> <b> Lektion 2: CSS3 Backgrounds<b></h1>  
+	 <p> CSS3 contains several new background properties, which allow greater control of the background element. <br>
+	 In this chapter you will learn about the following background properties:</p>
+	  <ul>
+	 	 <li> background-size</li>
+		 	 <li> background-origin </li>
+				 </ul>
+		<p>You will also learn how to use multiple background images.</p>
+		<h2>CSS3 The background-size Property</h2>
+		<p>The background-size property specifies the size of the background image. Before CSS3, the background image size was determined by the actual size of the image. 
+		In CSS3 it is possible to specify the size of the background image, which allows us to re-use background images in different contexts. You can specify the size in
+		pixels or in percentages. If you specify the size as a percentage, the size is relative to the width and height of the parent element. </p>
+		<img src="source/background-size.jpg" height="175px" width="600px";>	
+		<p> <span class="achtung"> <b>Attention:</b> </span> As an example you should look background image this website. It is small and on the top and left side of the website </p>	
+
+		<h2>CSS3 The background-origin Property</h2>
+		<p>The background-origin property specifies the positioning area of the background images. The background image can be placed within the content-box, padding-box, or border-box area.</p>
+		<img src="source/background-origin.jpg" height="175px" width="600px";>	
+		<img src="source/background-origin-beispiel.jpg" height="475px" width="600px";>
+		
+		<h2>CSS3 Multiple Background Images</h2>
+		<p>CSS3 allows you to use several background images for an element.</p>
+		<img src="source/background-multiple.jpg" height="175px" width="600px";>				 
+
+	 
+	 <h1 id="lektion3"> <b> Lektion 3: CSS3 Text Effects<b></h1>  
+	 <p> CSS3 contains several new text features. In this chapter you will learn about the following text properties: </p>
+	   <ul>
+	 	 <li> text-shadow</li>
+		 	 <li> word-wrap </li>
+				 </ul>
+				 
+	<h2>CSS3 Text Shadow</h2>
+		<p>In CSS3, the text-shadow property applies shadow to text.</p>
+		<img src="source/text-shadow.jpg" height="125px" width="600px";>	
+		<p> <span class="achtung"> <b>Attention:</b> </span> As an example you should look background image this website. It is small and on the top and left side of the website </p>	
+		<h1 class="shadow"> This is an example heading with shadow effect! </h1>
+		
+		<h2>CSS3 Word Wrapping</h2>
+		<p>If a word is too long to fit within an area, it expands outside. In CSS3, the word-wrap property allows you to force the text to wrap - even if it means splitting it in the middle of a word:</p>
+		<img src="source/word-wrap.jpg" height="125px" width="600px";>	
+		<p class="wrap"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+		<h2> CSS3 Text Properties </h2>
+		<img src="source/text-properties.jpg" height="425px" width="600px";>		
+	
+	  <h1 id="lektion4"> <b> Lektion 4: 2D Transforms<b></h1>  
+	 <p>In this chapter you will learn about the 2d transform methods:</p>
+	 <ul>
+			<li> translate()</li>
+		 	 <li> rotate()</li>
+			 <li> scale()</li>
+			 <li> skew()</li>
+			 <li> matrix()</li>
+				 </ul>
+	 <h2>4.1 The translate() Method</h2>
+	<p>With the translate() method, the element moves from its current position, depending on the parameters given for the left (X-axis) and the top (Y-axis) position:</p>
+	<img src="source/2d-translate.jpg" height="125px" width="600px";	>	 
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="trans">Hello. This is a DIV element.</div><br><br><br><br><br><br><br>
+	<p>The value translate(50px,100px) moves the element 50 pixels from the left, and 100 pixels from the top.</p>
+	
+	 <h2>4.2 The rotate() Method</h2>
+	<p>With the rotate() method, the element rotates clockwise at a given degree. Negative values are allowed and rotates the element counter-clockwise.</p>
+	<img src="source/2d-rotate.jpg" height="125px" width="600px";	>
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="rota">Hello. This is a DIV element.</div> <br><br>
+	<p>The value rotate(30deg) rotates the element clockwise 30 degrees.</p>
+	
+	<h2>4.3 The scale() Method</h2>
+	<p>With the scale() method, the element increases or decreases the size, depending on the parameters given for the width (X-axis) and the height (Y-axis):</p>
+	<img src="source/2d-scale.jpg" height="125px" width="600px";	>	
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="skala">Hello. This is a DIV element.</div>	<br><br>
+	<p>The value scale(2,4) transforms the width to be twice its original size, and the height 4 times its original size.</p>
+	
+	<h2>4.4 The skew() Method</h2>
+	<p>With the skew() method, the element turns in a given angle, depending on the parameters given for the horizontal (X-axis) and the vertical (Y-axis) lines:</p>
+	<img src="source/2d-skew.jpg" height="125px" width="600px";	>
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="skev">Hello. This is a DIV element.</div>	<br><br>	
+	<p>The value skew(30deg,20deg) turns the element 30 degrees around the X-axis, and 20 degrees around the Y-axis.</p>
+	
+	<h2>4.5 The matrix() Method</h2>
+	<p>The matrix() method combines all of the 2D transform methods into one. The matrix method take six parameters, containing mathematic functions, which allows you to: rotate, scale, move (translate), and skew elements.</p>
+	<img src="source/2d-matrix.jpg" height="125px" width="600px";	>
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="mat">Hello. This is a DIV element.</div>	<br><br>	
+	<p>The value skew(30deg,20deg) turns the element 30 degrees around the X-axis, and 20 degrees around the Y-axis.</p>
+	
+	<h2>2D Transform Methods</h2>
+	<img src="source/transform-method.jpg" height="425px" width="600px";	>
+	
+	  <h1 id="lektion5"> <b> Lektion 5: 3D Transforms<b></h1>  
+	 <p>CSS3 allows you to format your elements using 3D transforms. In this chapter you will learn about some of the 3D transform methods:</p>
+		 <ul>
+				<li>rotateX()</li>
+				<li> rotateY()</li>
+				</ul>
+		
+	<h2>4.1 The rotateX() Method</h2>
+	<p>With the rotateX() method, the element rotates around its X-axis at a given degree.</p>
+	<img src="source/3d-rotateX.jpg" height="125px" width="600px";	>
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="rotX">Hello. This is a DIV element.</div>	<br><br>	
+	
+	
+	<h2>4.2 The rotateY() Method</h2>
+	<p>With the rotateY() method, the element rotates around its Y-axis at a given degree.</p>
+	<img src="source/3d-rotateY.jpg" height="125px" width="600px";	>
+	<div class="translate">Hello. This is a DIV element.</div>
+	<div class="translate" id="rotY">Hello. This is a DIV element.</div>	<br><br>	
+	
+	<h2>CSS3 Transform Properties</h2>
+	<img src="source/3d-transform-properties.jpg" height="425px" width="600px";	>
+	
+	<h2>3D Transform Methods</h2>
+	<img src="source/3d-transform-method.jpg" height="425px" width="600px";	>
+	
+	
+	<h1 id="lektion6"> <b> Lektion 6: CSS3 Transitions<b></h1>  
+	<p> With CSS3, we can add an effect when changing from one style to another, without using Flash animations or JavaScripts.</p>
+	<h2>5.1 How does it work?</h2>
+	<p>CSS3 transitions are effects that let an element gradually change from one style to another. To do this, you must specify two things:</p>
+	 <ul>
+			<li>Specify the CSS property you want to add an effect to</li>
+		 	<li> Specify the duration of the effect.</li>
+			</ul>
+		<img src="source/transition-effect.jpg" height="125px" width="600px";>	
+		<div class="transition" id="hover" > Hover over me to see the transition effect!</div>
+		
+	<h2>5.2 Multiple changes</h2>
+	<p>To add a transitional effect for more than one style, add more properties, separated by commas:</p>
+		<img src="source/transition-multiple.jpg" height="125px" width="600px";	>	
+		<img src="source/transition-hover.jpg" height="125px" width="600px";	>	
+		<div class="transmul" id="hover" > Hover over me to see the transition effect!</div>
+
+<br>
+	<h1 id="lektion7"> <b> Lektion 7: CSS3 Animations<b></h1>  
+	<p> With CSS3, we can create animations, which can replace animated images, Flash animations, and JavaScripts in existing web pages.</p>
+	
+	<h2>7.1 CSS3 @keyframes Rule</h2>
+	<p>To create animations in CSS3, you will have to learn about the @keyframes rule. The @keyframes rule is where the animation is created. 
+	Specify a CSS style inside the @keyframes rule and the animation will gradually change from the current style to the new style. </p>		
+	<img src="source/keyframes.jpg" alt="Klematis" width="600px" height="175px">	
+	
+	<h2>7.2 CSS3 animation</h2>
+	<p>When the animation is created in the @keyframe, bind it to a selector, otherwise the animation will have no effect. 
+		Bind the animation to a selector by specifying at least these two CSS3 animation properties: </p>	
+	<ul>
+			<li>Specify the name of the animation</li>
+		 	<li> Specify the duration of the animation</li>
+			</ul>		
+	<img src="source/animation.jpg" alt="Klematis" width="600px" height="175px">
+	<div class="anime">This is an animation.</div>	<br>
+	<div class="anime2">This is an other animation.</div> <br>
+	<div class="anime3">This is an other animation.</div> <br><br><br><br><br><br><br><br><br><br>
+	
+	<h2>CSS3 Animation Properties</h2>
+	<p>The following table lists the @keyframes rule and all the animation properties: </p>		
+	<img src="source/animation-properties.jpg" width="600px" height="475px">	
+	<div class="anime4">All Method are used together .</div> <br><br><br><br><br><br><br><br><br><br>
+
+	<h1 id="lektion8"> <b> Lektion 8: CSS3 Multiple Columns<b></h1>  
+	<p> With CSS3, you can create multiple columns for laying out text - like in newspapers! In this chapter you will learn about the following multiple column properties:</p>
+	<ul>
+			<li>column-count</li>
+		 	<li>column-gap</li>
+			<li>column-rule</li>
+			</ul>		
+	<h2>CSS3 Create Multiple Columns</h2>
+	<p>The column-count property specifies the number of columns an element should be divided into: </p>	
+	<img src="source/multiple-columns.jpg" width="600px" height="125px">	
+	<div class="newspaper">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+			iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto 
+			odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend 
+			option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit 
+			eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+</div>
+	<h2>CSS3 Specify the Gap Between Columns</h2>
+	<p>The column-gap property specifies the gap between the columns:</p>	
+	<img src="source/gap-columns.jpg" width="600px" height="125px">	
+	<div class="newspaper-gap">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+			iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto 
+			odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend 
+			option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit 
+			eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+</div>
+	<h2>CSS3 Column Rules</h2>
+	<p>The column-rule property sets the width, style, and color of the rule between columns. </p>	
+	<img src="source/rule-columns.jpg" width="600px" height="125px">	
+	<div class="newspaper-rule">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+			iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto 
+			odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend 
+			option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit 
+			eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+</div>		
+	<h2>CSS3 Multiple Columns Properties</h2>
+		<img src="source/multiple-columns-properties.jpg"  width="600px" height="475px">	
+		
+	<h1 id="lektion9"> <b> Lektion 9: CSS3 User Interface<b></h1>  
+	<p>In CSS3, some of the new user interface features are resizing elements, box sizing, and outlining. In this chapter you will learn about the following user interface properties:</p>
+	<ul>
+			<li>resize</li>
+		 	<li>box-sizing</li>
+			<li>outline-offset</li>
+			</ul>	
+	<h2>7.1 CSS3 Resizing</h2>
+	<p>In CSS3, the resize property specifies whether or not an element should be resizable by the user.</p>		
+	<img src="source/resizing.jpg" alt="Klematis" width="600px" height="175px">	
+	<div class="resizing">The resize property specifies whether or not an element is resizable by the user.</div> <br>
+	
+	<h2>7.2 CSS3 Box Sizing</h2>
+	<p>The box-sizing property allows you to define certain elements to fit an area in a certain way: </p>	
+	<img src="source/box-sizing.jpg" alt="Klematis" width="600px" height="175px">
+	<div class="container">
+	<div class="box-sizing">This div occupies the left half.</div>
+	<div class="box-sizing">This div occupies the right half.</div>
+	</div> <br><br><br>
+	
+	<h2>7.3 CSS3 Outline Offset</h2>
+	<p>The outline-offset property offsets an outline, and draws it beyond the border edge.Outlines differ from borders in two ways: </p>
+		<ul>
+			<li>Outlines do not take up space</li>
+		 	<li>Outlines may be non-rectangular</li>
+			</ul>		
+	<img src="source/outline-offset.jpg" width="600px" height="175px">	
+	<div class="outline-offset">This div has an outline border 15px outside the border edge.</div>
+	<h2>CSS3 User-interface Properties</h2>
+	<img src="source/user-interface-properties.jpg" width="600px" height="475px">	
+
+	
+	 <br>
+		<div align="left" >		
+		<a href="advanced-themen.html"> <-- Zurück zu Advanced Themen</a>		
+		</div> 
+		<div align="right" >		
+		<a href="liste.html"> Weiter zu der Code-Liste--> 	</a>		
+		</div> 
+		<hr>
 
 
  </body>

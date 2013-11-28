@@ -19,6 +19,62 @@ h1 {
 		margin-bottom: 0px;
 	}
 	
+h1.hidden {display:none;}
+
+h1.shadow {
+text-shadow: 5px 5px 5px #FF0000;
+}
+
+p.wrap
+{
+width:11em; 
+border:1px solid #000000;
+word-wrap:break-word;
+}
+	
+span.achtung{
+	color:red;}
+
+[achtung]{
+ color:red;
+}
+
+[frame= frame] {
+	border: 5px dashed green;
+}
+
+[lang|=en]
+{
+color:blue;
+}
+div.sekil
+{
+font-family:myFirstFont;
+}
+
+@font-face
+{
+font-family: myFirstFont;
+src: url(sansation_light.woff);
+}
+
+
+
+a.lektion:link{
+	color:green;
+	text-decoration: none;
+}
+
+a.lektion:visited{
+	color:green;
+}
+
+ul.lektion{
+		list-style-type:none;
+		margin:5px;
+		padding:5px;
+}
+
 	
 ul.navitation{
 		list-style-type:none;
@@ -285,57 +341,349 @@ table {
 	  color:white;
 	}
 	
-	div.box {
+div.box {
 	  height: 500px;
 	  width: 200px;
 	  border: 1px solid black;
 	  background: orange;
 	}
-	#picture {
+	
+img.trans{
+opacity:0.4;
+}
+
+img:hover
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+div.container
+{
+width:30em;
+border:1em solid;
+}
+
+div.outline-offset
+{
+margin:20px;
+width:150px; 
+padding:10px;
+height:70px;
+border:2px solid black;
+outline:2px solid red;
+outline-offset:15px;
+} 
+div.box-sizing
+{
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+width:50%;
+border:1em solid red;
+float:left;
+} 
+div.resizing
+{
+border:2px solid;
+padding:10px 40px; 
+width:300px;
+resize:both;
+overflow:auto;
+}
+
+div.newspaper
+{
+border: 2px dashed red;
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome  § tane Spalte yapti */
+column-count:3;
+}
+
+.newspaper-gap
+{
+border: 2px dashed red;
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome  § tane Spalte yapti */
+column-count:3;
+-webkit-column-gap:40px; /* Safari and Chrome  Spalteler arasindaki mesafeyi 40px cikardi*/
+}
+.newspaper-rule
+{
+border: 2px dashed red;
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome  § tane Spalte yapti */
+column-count:3;
+-webkit-column-gap:40px; /* Safari and Chrome  Spalteler arasindaki mesafeyi 40px cikardi*/
+-webkit-column-rule:4px outset #ff00ff; /* Safari and Chrome Spaltelerin arasina pembe bir cizgi cekti*/ 
+}
+
+div.anime
+{
+width:100px;
+height:100px;
+background:red;
+animation:myfirst 5s;
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+}
+
+div.anime2
+{
+width:100px;
+height:100px;
+background:red;
+animation:mysecond 5s;
+-webkit-animation:mysecond 5s; /* Safari and Chrome */
+}
+
+div.anime3
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:mythird 5s;
+-webkit-animation:mythird 5s; /* Safari and Chrome */
+}
+div.anime4
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation-name:mythird;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Safari and Chrome: */
+-webkit-animation-name:mythird;
+-webkit-animation-duration:5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-webkit-keyframes mysecond /* Safari and Chrome */{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+
+@-webkit-keyframes mythird /* Safari and Chrome */{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+
+
+
+div.transmul
+{
+width:100px;
+height:100px;
+background:red;
+transition:width 2s, height 2s, transform 2s;
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari */
+}
+
+div.transmul:hover
+{
+width:200px;
+height:200px;
+transform:rotate(180deg);
+-webkit-transform:rotate(180deg); /* Safari */
+}
+
+div.transition
+{
+width:100px;
+height:100px;
+background:red;
+transition:width 2s;
+-webkit-transition:width 2s; /* Safari */
+}
+
+div.transition:hover
+{
+width:600px;
+}
+
+div.translate
+{
+width:100px;
+height:75px;
+background-color:red;
+border:1px solid black;
+}
+
+#rotX
+{
+transform:rotateX(120deg);
+-webkit-transform:rotateX(120deg); /* Safari and Chrome */
+}
+
+#rotY
+{
+transform:rotateY(130deg);
+-webkit-transform:rotateY(130deg); /* Safari and Chrome */
+}
+
+#mat
+{
+transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+-ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+}
+
+#skev
+{
+margin:100px;
+transform:skew(30deg,20deg);
+-ms-transform:skew(30deg,20deg); /* IE 9 */
+-webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
+}
+
+#skala
+{
+margin:100px;
+transform:scale(2,4);
+-ms-transform:scale(2,4); /* IE 9 */
+-webkit-transform:scale(2,4); /* Safari and Chrome */
+}
+
+#rota
+{
+transform:rotate(30deg);
+-ms-transform:rotate(30deg); /* IE 9 */
+-webkit-transform:rotate(30deg); /* Safari and Chrome */
+}
+
+#trans
+{
+transform:translate(50px,100px);
+-ms-transform:translate(50px,100px); /* IE 9 */
+-webkit-transform:translate(50px,100px); /* Safari and Chrome */
+}
+
+div.background
+  {
+  width:500px;
+  height:250px;
+  background:url("klematis_small.jpg") repeat;
+  border:2px solid black;
+  }
+div.transbox
+  {
+  width:400px;
+  height:180px;
+  margin:30px 50px;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  }
+div.transbox p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+  }
+	
+div.img
+  {
+  margin:5px;
+  padding: 5px;
+  border:1px solid #0000ff;
+  height:auto;
+  width:auto;
+  float:left;
+  text-align:center;
+  }
+  div.img a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+  
+  div.desc
+  {
+  text-align:center;
+  font-weight:normal;
+  width:120px;
+  margin:5px;
+  }
+  
+  div.img img
+  {
+  display:inline;
+  margin:5px;
+  border:1px solid #ffffff;
+  }
+  
+div.radius
+	{
+	border:2px solid #a1a1a1;
+	padding:10px 40px; 
+	background:#dddddd;
+	width:300px;
+	border-radius:25px;
+}
+
+div.shadow
+{
+color: white;
+width:300px;
+height:100px;
+background-color:green;
+box-shadow: 10px 10px 5px #888888;
+}
+
+div.border
+{
+border:15px solid transparent;
+width:250px;
+padding:10px 20px;
+}
+
+#round
+{
+-webkit-border-image:url(border.png) 30 30 round; /* Safari 5 and older */
+-o-border-image:url(border.png) 30 30 round; /* Opera */
+border-image:url(border.png) 30 30 round;
+}
+
+#stretch
+{
+-webkit-border-image:url(border.png) 30 30 stretch; /* Safari 5 and older */
+-o-border-image:url(border.png) 30 30 stretch; /* Opera */
+border-image:url(border.png) 30 30 stretch;
+}
+	
+	
+#picture {
 	  float:left;
 	  width: 275px;
 	}
 	
 	
-	p.floatstop {
+div.floatstop {
 	text-indent: 10px;
 		font: normal normal 14px arial, sans-serif;
 		text-align: justify;
 		letter-spacing: 0px;
-	 /* <!-- clear:both; uygulanan float metodunu nötr hale getirmek icin kullanilir. Alabilecegi degerler, right,left,both,top,bottom.-->*/ 
+	 clear:both; /* uygulanan float metodunu nötr hale getirmek icin kullanilir. Alabilecegi degerler, right,left,both,top,bottom.*/
 	}
 	
-	#karo_zehn {
-	  position: relative;
-	  left: 0px;
-	  top: 10px;
-	  z-index: 1;
-	}
-
-	#karo_bube {
-	  position: relative;
-	  left: 20px;
-	  top: -120px;
-	  z-index: 2;
-	}
-
-	#karo_dame {
-	  position: relative;
-	  left: 40px;
-	  top: -240px;
-	  z-index: 3;
-	}
-
-	#karo_koenig {
-	  position: relative;
-	  left: 60px;
-	  top: -360px;
-	  z-index: 4;
-	}
-
-	#karo_ass {
-	  position: relative;
-	  left: 80px;
-	  top: -480px;
-	  z-index: 5;
-	}
